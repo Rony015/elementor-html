@@ -1,0 +1,98 @@
+/** :::::::::::::::: card style 3 css :::::::::::::::**/
+.dl_card_box{
+    &.dl_card_style_03{
+        background: #002B3F;
+        padding: 35px 35px 30px;
+        @include transform_time(.3s);
+        @media #{$tab}{
+            padding: 30px 20px;
+        }
+        @media #{$medium_device}{
+            padding: 35px 20px;
+        }
+        @media #{$tab}{
+            margin-bottom: 40px;
+        }
+        .dl_card_thumb{
+            display: flex;
+            height: 224px;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+        }
+        .dl_info_box_img + .dl_cu_btn{
+            margin-top: 30px;
+        }
+        .dl_title{
+            line-height: 1;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 0;
+            color: #fff;
+            &.dl_text_dark{
+                color: #000000;
+            }
+        }
+        .dl_cu_btn{
+            font-weight: 500;
+            padding: 9px 24px;
+            line-height: 20px;
+            &.btn_4{
+                background-color: #161616;
+                border: 1px solid #161616;
+                
+                &:hover{
+                    background-color: $base_color;
+                    border: 1px solid $base_color;
+                }
+            }
+        }
+       
+        .dl_title + .dl_card_thumb{
+            margin-top: 15px;
+        }
+        .dl_title + .dl_cu_btn{
+            margin-top: 20px;
+        }
+        .dl_cu_btn + .dl_title{
+            margin-top: 20px;
+        }
+    }
+}
+
+.dl_col_lg_3{
+    &:nth-child(2){
+        .dl_card_box{
+            &.dl_card_style_03 {
+                margin-top: 50px;
+                background-color: #00755F;
+                @media #{$tab}{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    &:nth-child(3){
+        .dl_card_box{
+            &.dl_card_style_03 {
+                margin-top: 100px;
+                background-color: #ffffff;
+                @media #{$tab}{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    &:nth-child(4){
+        .dl_card_box{
+            &.dl_card_style_03 {
+                margin-top: 150px;
+                background-color: #FE5454;
+                @media #{$tab}{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+/** :::::::::::::::: card style 3 css :::::::::::::::**/

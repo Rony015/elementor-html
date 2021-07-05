@@ -1,0 +1,91 @@
+.dl_footer_section{
+    .dl_single_feature_footer{
+        @media #{$tab}{
+            margin-bottom: 30px;
+        }
+        h4{
+            font-size: 20px;
+            margin-bottom: 26px;
+            font-weight: 600;
+            @media #{$tab}{
+                margin-bottom: 18px;
+            }
+        }
+        .footer_logo{
+            margin-bottom: 26px;
+            display: inline-block;
+        }
+        p{
+            color: $text_color;
+            a{
+                color: $base_color;
+            }
+        }
+    }
+    .footer_nav{
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+                a{
+                    color: $text_color;
+                    display: inline-block;
+                    line-height: 1;
+                    margin-bottom: 13px;
+                    &:hover{
+                        color: $base_color;
+                    }
+                }
+            }
+        }
+    }
+    .subscribe_form{
+        margin-top: 22px;
+        .form-control{
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 2px 4px 0px rgba(5, 19, 69, 0.08);
+            height: 50px;
+            line-height: 40px;
+            padding: 5px 25px;
+            border: 0px solid transparent;
+            background-color: $white;
+        }
+        .dl_cu_btn{
+            padding: 14px 12px;
+            min-width: auto;
+            &:hover{
+                background-color: rgba($color: $base_color, $alpha: .8);
+                color: $white;
+                border: 2px solid rgba($color: $base_color, $alpha: .4);
+            }
+        }
+    }
+    .social_icon{
+        margin-top: 30px;
+        @media #{$mobile}{
+            margin-top: 20px;
+        }
+        a{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 2px 4px 0px rgba(5, 19, 69, 0.08);
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 5px;
+            i{
+                color: $icon_color;
+                @include transform_time(.5s);
+            }
+            &:hover{
+                box-shadow: 0px 20px 20px 0px rgba(5, 19, 69, 0.1);
+            }
+        }
+    }
+}
+

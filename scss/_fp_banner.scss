@@ -1,0 +1,619 @@
+/******** fp banner css here *********/
+.dl_height_100vh {
+    min-height: 100vh;
+    @media #{$tab}{
+        padding: 120px 0;
+    }
+    @media #{$medium_device}{
+        padding: 80px 0;
+    }
+}
+
+.dl_fp_banner_content {
+    .dl_banner_sub_title {
+        font-size: 16px;
+        color: $white;
+    }
+
+    .dl_banner_title {
+        color: $white;
+        font-size: 91.6px;
+        font-weight: 700;
+        line-height: 1;
+        @media #{$xs_mobile}{
+            font-size: 40px;
+            line-height: 1.2;
+        }
+        @media #{$large_mobile}{
+            font-size: 50px;
+            line-height: 1.2;
+        }
+        @media #{$tab_device}{
+            font-size: 60px;
+            line-height: 1.2;
+        }
+        @media #{$medium_device}{
+            font-size: 70px;
+            line-height: 1.2;
+        }
+        @media #{$big_screen}{
+            font-size: 70px;
+            line-height: 1.2;
+        }
+        @media #{$extra_big_screen}{
+            font-size: 75px;
+            line-height: 1.2;
+        }
+        span {
+            color: #D4F21B;
+        }
+    }
+
+    .dl_banner_line {
+        margin-top: 160px;
+        width: 25%;
+        border-top: 3px solid #D4F21B;
+        @media #{$tab}{
+            margin-top: 40px;
+        }
+    }
+}
+
+/******** fp banner css end *********/
+
+/******** fp experience section css *********/
+.dl_fp_experience_section {
+    &.sec_padding {
+        padding: 128px 0 96px;
+    }
+}
+.dl_fp_experience_title {
+    .dl_banner_title {
+        font-size: 43px;
+        font-weight: 700;
+        color: $white;
+        @media #{$tab}{
+            font-size: 35px;
+        }
+    }
+    .dl_fp_swiper_navigation {
+        display: flex;
+        align-items: center;
+        .swiper_button_prev,
+        .swiper_button_next {
+            margin-left: 20px;
+            cursor: pointer;
+            i {
+                opacity: 1;
+                transition: all 0.3s;
+                font-size: 40px;
+                &:hover{
+                    color: #D4F21B;
+                }
+            }
+        }
+    }
+}
+
+.dl_experience_list_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    @media #{$medium_device}{
+        padding: 30px 0;
+    }
+    @media #{$tab}{
+        padding: 30px 0;
+    }
+    @media #{$medium_device}{
+        padding: 40px 0;
+    }
+    @media #{$big_screen}{
+        padding: 40px 0;
+    }
+    @media #{$extra_big_screen}{
+        padding: 40px 0;
+    }
+    &:first-child {
+        border-top: 0px solid transparent;
+    }
+    .dl_fp_institute_logo,
+    .dl_fp_institute_job_time,
+    .dl_fp_institute_job_desc {
+        flex: 30% 0 0;
+        @media #{$tab}{
+            flex: 100% 0 0;
+        }
+    }
+    .dl_fp_institute_job_time {
+        color: $white;
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+    }
+    .dl_fp_institute_name {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.25;
+        color: $white;
+        margin-bottom: 0;
+        text-transform: capitalize;
+        @media #{$tab}{
+            font-size: 25px;
+        }
+    }
+    .dl_fp_institute_job_desc {
+        font-size: 16px;
+        line-height: 1.625em;
+        color: $white;
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+    }
+}
+
+.dl_fp_experience_content {
+    .dl_fp_exp_pagination1, .dl_fp_exp_pagination {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        margin-top: 60px;
+        .swiper-pagination-bullet {
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: #d6d6d6;
+            border-radius: 0;
+            margin: 0 5px;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #D4F21B;
+        }
+    }
+}
+
+/******** fp experience section css end *********/
+
+/******** fp skils section css *********/
+.dl_fp_skils_img {
+    position: relative;
+    @media #{$tab}{
+        margin-bottom: 60px;
+    }
+    .dl_skils_img {
+        width: 100%;
+    }
+    [class^="dl_skils_shape_img_"],
+    [class*="dl_skils_shape_img_"] {
+        position: absolute;
+        box-shadow: 0 5px 15px 5px rgba(16, 16, 16, .1);
+        transition: all .6s .4s ease;
+    }
+    .dl_skils_shape_img_01 {
+        left: -5%;
+        bottom: 40%;
+        @media #{$tab}{
+            left: 0; 
+        }
+    }
+    .dl_skils_shape_img_02 {
+        right: 30%;
+        top: -10%;
+        @media #{$tab}{
+            top: -68px;
+        }
+    }
+    .dl_skils_shape_img_03 {
+        right: -5%;
+        bottom: -5%;
+        @media #{$tab}{
+            right: 17px;
+            bottom: -28px;
+        }
+        @media #{$medium_device}{
+            right: 17px;
+            bottom: -28px;
+        }
+    }
+}
+.dl_fp_skils_content {
+    .dl_title {
+        font-weight: 700;
+        font-size: 2.7rem;
+        line-height: 1.2;
+        color: #000;
+        margin-bottom: 30px;
+        @media #{$tab}{
+            font-size: 30px;
+        }
+        span {
+            color: #D4F21B;
+        }
+    }
+
+    .dl_description {
+        color: #767676;
+        font-size: 16px;
+        line-height: 1.625em;
+    }
+
+
+}
+
+.progress_bar_wrapper {
+    margin-top: 53px;
+    @media #{$tab}{
+        margin-top: 20px;
+    }
+    .progress_bar {
+        margin-bottom: 50px;
+        position: relative;
+        @media #{$tab}{
+            margin-bottom: 25px;
+        }
+        .dl_desc {
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            color: #000;
+            text-transform: uppercase;
+            margin-bottom: 17px;
+        }
+
+        .progressbar {
+            background-color: #000;
+        }
+
+        .proggress {
+            height: 6px;
+            width: 10px;
+            background-color: #D4F21B;
+
+        }
+
+        .progressbar {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .percentCount {
+            font-weight: 700;
+            font-size: 14px;
+            color: $heading_color;
+            position: absolute;
+            right: 0;
+            top: -35px;
+        }
+    }
+}
+
+/******** fp skils section css end *********/
+
+/******** latest project section *********/
+.dl_fp_portfolio_section {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.dl_bg_changer {
+    .dl_section_bg {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        will-change: opacity, transform;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: opacity 0.5s 0.2s ease, transform 5s 0.2s ease;
+        -o-transition: opacity 0.5s 0.2s ease, transform 5s 0.2s ease;
+        transition: opacity 0.5s 0.2s ease, transform 5s 0.2s ease;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        &.dl_active {
+            opacity: 1;
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+    }
+}
+
+.dl_project_box_col {
+    margin-top: 30px;
+    .dl_project_box {
+        display: block;
+        padding-bottom: 30%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+        @media (min-width: 768px) {
+            .project-box {
+                padding-bottom: 75%;
+            }
+        }
+
+        .dl_project_box_inner {
+            padding: 2.14rem 1.928rem;
+            @media (max-width: 991px) {
+                padding: 20px;
+                min-height: 100px;
+            }
+        }
+
+        .dl_title {
+            margin: 0;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.525rem;
+            line-height: 1.2;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .dl_project_category {
+            position: absolute;
+            bottom: 1.2rem;
+            color: #cccccc;
+            font-size: 16px;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            background-color: #D4F21B;
+
+            .dl_title {
+                color: $heading_color;
+            }
+
+            .dl_project_category {
+                color: #666666;
+            }
+        }
+    }
+}
+
+/******** latest project section end *********/
+
+
+/******** testimonial section css *********/
+.dl_fp_testimonial_title{
+    .dl_icon_quote {
+        line-height: 1;
+        font-size: 12rem;
+        color: #D4F21B;
+        @media #{$tab}{
+            font-size: 30px;
+        }
+    }
+    
+    .dl_title{
+        font-weight: 700;
+        font-size: 2.7rem;
+        line-height: 1.2;
+        color: #fff;
+        @media #{$tab}{
+            font-size: 30px;
+        }
+        span{
+            color: #D4F21B;
+        }
+    }
+    
+}
+.dl_fp_testomonial_content{
+    .dl_name{
+        line-height: 1.2;
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 50px;
+        @media #{$tab}{
+            margin-bottom: 20px;
+        }
+        span{
+            font-weight: 600;
+            font-size: 1.525rem;
+        }
+    }
+    .dl_desc{
+        color: #fff;
+        font-size: 16px;
+    }
+    .dl_fp_swiper_navigation {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+        .swiper_button_prev,
+        .swiper_button_next {
+            margin-right: 20px;
+            cursor: pointer;
+            i {
+                opacity: 1;
+                transition: all 0.3s;
+                font-size: 40px;
+                &:hover{
+                    color: #D4F21B;
+                }
+            }
+        }
+    }
+}
+/******** testimonial section end *********/
+
+/******** fp blog section *********/
+.dl_fp_blog_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    .dl_title{
+        margin-bottom: 0;
+    }
+    .dl_cu_btn{
+        background-color: #D4F21B;
+        color: #000;
+        border: 1px solid #D4F21B;
+        border-radius: 0;
+        padding: 1em 2.4em 1em;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+    }
+}
+.dl_fp_blog_wrapper{
+    @media #{$tab}{
+        margin-bottom: 40px;
+    }
+    .dl_blog_thumb_wrapper{
+        overflow: hidden;
+        display: inline-flex;
+        .dl_blog_thumb{
+            max-width: 100%;
+            @include transform_time(.3s);
+        }
+        &:hover{
+            .dl_blog_thumb{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .dl_blog_meta{
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        @media #{$tab}{
+            margin-top: 14px;
+        }
+        span,a{
+            line-height: 1.625;
+            color: #767676;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        span{
+            margin: 0 5px;
+        }
+    }
+    .dl_blog_title{
+        font-size: 24px;
+        margin-top: 13px;
+        margin-bottom: 18px;
+        @media #{$tab}{
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        a{
+            color: #000;
+        }
+    }
+    .dl_read_more_btn{
+        color: #c5e213;
+        font-size: 16px;
+        line-height: 1.625;
+        display: inline-flex;
+        align-items: center;
+        transform: translateY(30px);
+        opacity: 0;
+        visibility: hidden;
+        i{
+            margin-left: 8px;
+            margin-top: 3px;
+        }
+        @media #{$tab}{
+            transform: translateY(0px);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &:hover{
+        .dl_read_more_btn{
+            transform: translateY(0px);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+/******** fp blog section end *********/
+
+/******** fp contact section *********/
+.dl_contact_form_wrapper{
+    &.dl_fp_form_style{
+        .dl_title{
+            font-size: 30px;
+            color: #fff;
+            line-height: 1.25;
+            font-weight: 700;
+            margin-bottom: 31px;
+            span{
+                color: #c5e213;
+            }
+        }
+        .dl_form_group_style_02{
+            margin-bottom: 30px;
+            margin-top: 30px;
+            input, 
+            textarea{
+                color: #bbb;
+                font-size: 16px;
+                padding: 6px 22px;
+            }
+            .dl_control_label {
+                top: -13px;
+                left: 22px;
+            }
+            textarea{
+                min-height: 126px;
+            }
+            .open:focus ~ .dl_control_label, input:focus ~ .dl_control_label, textarea:focus ~ .dl_control_label {
+                color: #c5e213;
+                left: 22px;
+                top: -25px;
+            }
+            .open:focus ~ .dl_line::before,  input:focus ~ .dl_line::before, textarea:focus ~ .dl_line::before {
+                background-color: #c5e213;
+            }
+            .open, input:focus, input:valid, input.form-file, input.has-value, textarea:focus, textarea:valid, textarea.form-file, textarea.has-value {
+                color: #fff;
+            }
+        }
+        .dl_contact_form_btn {
+            background-color: #D4F21B;
+            color: #000;
+            border: 1px solid #D4F21B;
+            border-radius: 0;
+            padding: 1em 2.4em 1em;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+        .dl_line{
+            border-bottom: 1px solid rgba(255,255,255,.6);
+        }
+    }
+}
+/******** fp contact section end *********/

@@ -1,0 +1,74 @@
+
+.image_carousel{
+    &.style_02{
+        .owl-stage {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+        .owl-item{
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: auto !important;
+            align-items: center;
+            justify-content: center;
+        }
+        .owl-dots{
+            text-align: center;
+            margin: 60px 0 0;
+            .owl-dot{
+                border-radius: 0;
+                width: 22px;
+                height: 4px;
+                background-color: #d8d8d8;
+                text-align: center;
+                margin: 0 5px;
+                &.active{
+                    background-color: #111;
+                }
+            }
+        }
+    }
+    .owl-nav{
+        button.owl-prev, button.owl-next{
+            width: 50px;
+            height: 50px;
+            border: 1px solid #111;
+            background-color: #111;
+            color: #fff;
+            border-radius: 50%;
+            line-height: 50px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+            position: absolute;
+            left: 2%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            @include transform_time(.4s);
+            &:hover{
+                background-color: #000;
+            }
+        }
+        button.owl-next{
+            left: auto;
+            right: 2%;
+        }
+    }
+    &:hover{
+        .owl-nav{
+            button.owl-prev, button.owl-next{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+/** :::::::::::::::: info box style 4 css :::::::::::::::**/
+.dl_info_box_section{
+    &.dl_info_box_bg_2{
+        @include background ("../img/icon_box_bg_2.png");
+    }
+}
+
+.dl_single_info_box{
+    &.style_4{
+        background-color: $white;
+        text-align: center;
+        padding: 60px 25px;
+        position: relative;
+        border-radius: 5px;
+        @include transform_time (.3s);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &:hover{
+            box-shadow: 0px 10px 30px #2D2D2D;
+        }
+        @media #{$tab}{
+            margin-top: 40px;
+        }
+        .info_box_icon{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #F6F1FE;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            &.bg_color_2{
+                background-color: #F8DED8;
+            }
+            &.bg_color_3{
+                background-color: #FFF1C7;
+            }
+        }
+        .info_box_icon{
+            position: relative;
+            .info_box_shape{
+                position: absolute;
+            }
+        }
+        .dl_title{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+        .dl_description{
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        .read_more_btn{
+            margin-top: 18px;
+            &:hover{
+                color: #2945FF;
+            }
+        }
+    }
+}
+/** :::::::::::::::: info box style 4 css end :::::::::::::::**/

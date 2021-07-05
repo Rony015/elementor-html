@@ -1,0 +1,97 @@
+/** :::::::::::::::: blog post style 1 css :::::::::::::::**/
+.single_blog_post {
+    &.style_1 {
+        box-shadow: 0 20px 50px rgba(0, 0, 0, .05);
+        .single_blog_content {
+            background: #fff;
+            padding: 17px 20px 35px;
+            border-radius: 0 0 5px 5px;
+        }
+        .post_thumb {
+            overflow: hidden;
+            border-radius: 5px 5px 0 0;
+            display: flex;
+        }
+    
+        .tag {
+            color: #5468FF;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.38px;
+            line-height: 1.4;
+            margin-bottom: 13px;
+            display: inline-block;
+        }
+    
+        .dl_title {
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 28px;
+            margin-bottom: 0;
+            a {
+                color: #141C2A;
+                &:hover {
+                    color: #5468FF;
+                }
+            }
+        }
+        .dl_title + .dl_post_meta{
+            margin-top: 24px;
+        }
+        .dl_post_meta + .dl_title{
+            margin-top: 15px;
+        }
+
+        .dl_post_meta{
+            @media (min-width: 768px){
+                display: flex;
+                align-items: center; 
+            }
+            p{
+                position: relative;
+                z-index: 1;
+                @media (min-width: 768px){
+                    padding-right: 40px;
+                    &:after{
+                        position: absolute;
+                        content: "";
+                        right: 12px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: #DAD8D8;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                    }
+                    &:last-child{
+                        padding-right: 0;
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
+                
+            }
+            .dl_post_author{
+                font-size: 15px;
+                color: #A7ABBF;
+                a{
+                    color: #404773;
+                }
+            }
+            .dl_date{
+                a{
+                   margin-left: 10px;
+                    color: #A7ABBF;
+                    font-size: 15px;
+                    @media #{$mobile} {
+                        margin-left: 0;
+                        margin-top: 0;
+                    } 
+                }
+            }
+        }
+    }
+}
+/** :::::::::::::::: blog post style 1 css :::::::::::::::**/

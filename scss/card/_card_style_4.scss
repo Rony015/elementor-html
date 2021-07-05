@@ -1,0 +1,60 @@
+/** :::::::::::::::: card style 4 css :::::::::::::::**/
+.dl_card_box{
+    &.dl_card_style_04{
+        @media #{$tab}{
+            margin-bottom: 40px;
+        }
+        .dl_card_thumb{
+            display: block;
+            width: 100%;
+            border: 1px solid #EAEAEA;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            border-radius: 30px;
+            img{
+                max-height: 182px;
+                @include transform_time(.3s);
+            }
+            .dl_tag{
+                position: absolute;
+                top: 25px;
+                right: 25px;
+                background-color: #47464C;
+                border-radius: 10px;
+                font-size: 14px;
+                padding: 1px 12px;
+                color: #fff;
+            }
+        }
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        .dl_title{
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 0;
+            line-height: 1;
+            a{
+                color: #333333;
+                &:hover{
+                    color: $base_color;
+                }
+            }
+        }
+        .dl_card_thumb + .dl_title{
+            margin-top: 30px;
+        }
+        .dl_title + .dl_desc{
+            margin-top: 20px;
+        }
+        .dl_desc{
+            color: #6A6A6A;
+            font-size: 15px;
+            line-height: 26px;
+        }
+    }
+}
+/** :::::::::::::::: card style 4 css :::::::::::::::**/

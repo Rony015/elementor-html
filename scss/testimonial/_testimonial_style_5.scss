@@ -1,0 +1,65 @@
+/******** testimonial style 5 css ********/
+.dl_testimonial_section{
+    &.dl_testimonial_bg_shape{
+        position: relative;
+        z-index: 1;
+        @include background ("../img/testimonial_line_shape.png");
+        .dl_dot_shape{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            top: 10%;
+            z-index: -1;
+            max-width: 200px;
+        }
+    }
+}
+.dl_single_testimonial_slider{
+    &.style_05{
+        text-align: center;
+        .dl_sub_title{
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        .dl_content{
+            color: #fff;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 45px;
+            margin-bottom: 0;
+            @media #{$mobile}{
+                font-size: 22px;
+                line-height: 37px;
+            }
+            @media #{$tab_device}{
+                font-size: 25px;
+                line-height: 40px;
+            }
+        }
+        .dl_client_info{
+            position: relative;
+            z-index: 1;
+            margin-top: 50px;
+            .dl_client_img{
+                max-width: 65px;
+                border-radius: 50%;
+            }
+            .dl_name{
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 0;
+                margin-top: 5px;
+                color: #fff;
+            }
+            .dl_position{
+                font-size: 12px;
+                color: #C4C9D0;
+            }
+        }
+    }
+}
+/******** testimonial style 5 css end ********/

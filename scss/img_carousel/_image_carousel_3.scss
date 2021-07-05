@@ -1,0 +1,33 @@
+.dl_image_carousel{
+    &.style_03{
+        .dl_img_carousel_thumb{
+           display: flex;
+        }
+        .dl_carousel_thumb{
+            width: 100%;
+            -webkit-transition: all .25s cubic-bezier(0, 0, 0.2, 1);
+            transition: all .25s cubic-bezier(0, 0, 0.2, 1);
+        }
+        .dl_image_carousel_desc{
+            padding: 20px 30px;
+            z-index: 5;
+            text-align: center;
+            .dl_tag{
+                font-size: 14px;
+                color: #B8BCC1;
+                display: inline-block;
+            }
+            .dl_title{
+                margin-bottom: 0;
+                font-size: 20px;
+                line-height: 30px;
+                color: #111111;
+            }
+        }
+        &:hover{
+            .dl_carousel_thumb{
+                box-shadow: 0 40px 40px -20px rgba(51, 51, 51, 0.41);
+            }
+        }
+    }
+}

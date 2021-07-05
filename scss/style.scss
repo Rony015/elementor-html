@@ -1,0 +1,142 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Droitthemes
+@URL: http://droitthemes.com/
+Author E-mail: 
+
+This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: 
+@Author:  Md. Shahadat Hussain
+@Developed By: Palash
+@Developer URL: http://droitthemes.com/
+Author E-mail: 
+
+@Default Styles
+
+Table of Content:
+01/ Variables
+02/ mixins
+03/ reset
+04/ button
+05/ header
+06/ banner part
+
+=====================================================================*/ 
+
+//variables css
+@import "variables";
+
+//mixins css
+@import "mixins";
+
+//button css
+@import "button";
+
+//grid css
+@import "grid";
+
+//reset css
+@import "reset";
+
+//breadcrumb part style css
+@import "breadcrumb";
+
+//info box part style css
+@import "info_box/all";
+
+//info box part style css
+@import "blog/all";
+
+//testimonial style css
+@import "testimonial/all";
+
+//img carousel style css
+@import "img_carousel/all";
+
+//card style css
+@import "card/all";
+
+//woocommerce style css
+@import "woocommerce/all";
+
+//cta part style css
+@import "cta";
+
+//pricing style css
+@import "pricing/all";
+
+//team style css
+@import "team_style";
+
+//tab css
+@import "tab";
+
+//icon box css
+@import "icon_box";
+
+//process box css
+@import "process";
+
+//timeline css
+@import "timeline";
+
+//horizontal timeline css
+@import "horizontal_timeline";
+
+//accordion css
+@import "accordion";
+
+//blog list post css
+@import "blog_list_post";
+
+//countdown css
+@import "dl_countdown";
+
+//social feed css
+@import "social_feed";
+
+//table css
+@import "table";
+
+//contact css
+@import "contact";
+
+//swiper thumbnail slider css
+@import "swiper_thumbnail_slider";
+
+//banner slider css
+@import "banner";
+
+//alert box css
+@import "alert_box";
+
+//img compair css
+@import "social_icon";
+
+//img compair css
+@import "img_compair";
+
+//news tricker css
+@import "news_tricker";
+
+//animated heading css
+@import "animated_heading";
+
+//flip box css
+@import "flip_box";
+
+//full page banner css
+@import "fp_banner";
+
+//sparch widget css
+@import "sparch_widget";
+
+//check box css
+@import "check_box";
+
+//footer style css
+@import "footer";

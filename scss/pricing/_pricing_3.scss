@@ -1,0 +1,246 @@
+/******** popular pricing style 03 here ********/ 
+.dl_pricing_plan{
+    &.dl_style_03{
+        background-color: #fff;
+        position: relative;
+        border-radius: 6px;
+        border: 1px solid #E9ECF0;
+        @include transform_time(.3s);
+        @media #{$tab}{
+            margin-bottom: 30px;
+        }
+        .dl_pricing_part_title{
+            padding: 28px 50px 0;
+            @media #{$tab}{
+                padding: 28px 20px 0;
+            }
+            @media #{$medium_device}{
+                padding: 28px 20px 0;
+            }
+        }
+        .dl_title{
+            font-size: 20px;
+            font-weight: 500;
+            color: #44515B;
+            text-align: center;
+            @include transform_time(.3s);
+        }
+        .dl_title + .dl_price{
+            margin-top: 40px;
+        }
+
+        .dl_price{
+            font-size: 65px;
+            font-weight: 700;
+            color: #5A52FF;
+            display: flex;
+            line-height: 0.6;
+            justify-content: center;
+            @include transform_time(.3s);
+            .dl_currancy{
+                font-size: 18px;
+                margin-right: 8px;
+                align-self: flex-start;
+            }
+            .dl_price_duration{
+                font-size: 15px;
+                color: #44515B;
+                font-weight: 500;
+                margin-left: 10px;
+                align-self: flex-end;
+                @include transform_time(.3s);
+            }
+        }
+        
+        .dl_pricing_list{
+            min-height: 227px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border-top: 1px solid #EDF1F6;
+            padding: 20px 50px;
+            @include transform_time(.3s);
+            @media #{$tab}{
+                padding: 20px 20px;
+            }
+            @media #{$medium_device}{
+                padding: 20px 20px;
+            }
+            .dl_pricing_list_inner{
+                width: 100%;
+            }
+            .dl_listing_desc{
+                text-align: center;
+                @include transform_time(.3s);
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 20px 0;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        margin-right: 11px;
+                        @include transform_time(.3s);
+                    }
+                }
+            }
+            .dl_listing_desc + ul{
+                margin-top: 25px;
+            }
+        } 
+        .dl_pricing_part_title + .dl_pricing_list{
+            margin-top: 40px;
+        }
+        .dl_title + .dl_pricing_list{
+            margin-top: 30px;
+        }
+        .dl_pricing_list + .dl_cu_btn{
+            margin-top: 26px;
+        }
+        .dl_pricing_part_btn{
+            padding: 0 50px 25px;
+            text-align: center;
+            @media #{$tab}{
+                padding: 0 20px 20px;
+            }
+            @media #{$medium_device}{
+                padding: 0 20px 20px;
+            }
+            .dl_desc{
+                a{
+                    font-size: 14px;
+                    color: #44515B;
+                    font-weight: 500;   
+                    display: inline-block;
+                }
+            }
+            .btn_2 + .dl_desc{
+                margin-top: 13px;
+            }
+            .dl_desc + .btn_2{
+                margin-top: 13px;
+            }
+        }
+        .dl_cu_btn{
+            padding: 15px 40px;
+            border-radius: 6px;
+            &.btn_2{
+                border: 1px solid #11CB6D;
+                color: #11CB6D;
+                &:hover{
+                    background-color: #11CB6D;
+                    color: #fff;
+                }
+            }
+            &.malachite_btn{
+                border: 1px solid #11CB6D;
+                background-color: #11CB6D;
+                &:hover{
+                    background-color: $base_color;
+                    border: 1px solid $base_color;
+                    color: #fff;
+                }
+            }
+        }
+        .dl_popular_tricker{
+            position: absolute;
+            top: 40px;
+            left: -5px;
+            .dl_text{
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                background-color: #5A52FF;
+                padding: 5px 20px;
+                font-size: 9px;
+                font-weight: 700;
+                text-transform: uppercase;
+                clip-path: polygon(100% 0%, 94% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+            }
+        }
+        // &.dl_center_price_plan{
+        //     background-color: #5A52FF;
+        //     box-shadow: 0px 3px 6px #F0F2F5;
+        //     color: $white;
+        //     .dl_title{
+        //         color: $white;
+        //     }
+        //     .dl_price{
+        //         color: $white;
+        //         .dl_price_duration{
+        //             color: $white;
+        //         }
+        //     }
+        //     .dl_pricing_list .dl_listing_desc{
+        //         color: $white;
+        //     }
+        //     .dl_cu_btn{
+        //         &.btn_2{
+        //             color: $white;
+        //         }
+        //     }
+        //     .dl_pricing_list{
+        //         border-top: 1px solid #5065FA;
+        //         ul{
+        //             li{
+        //                 img{
+        //                     -webkit-filter: brightness(0) invert(1);
+        //                     filter: brightness(0) invert(1);
+        //                 }
+        //             }
+        //         }
+        //     } 
+        //     .dl_desc{
+        //         a{
+        //             color: $white;
+        //         }
+        //     }
+        // }
+        &:hover{
+            background-color: #5A52FF;
+            box-shadow: 0px 3px 6px #F0F2F5;
+            color: $white;
+            .dl_title{
+                color: $white;
+            }
+            .dl_price{
+                color: $white;
+                .dl_price_duration{
+                    color: $white;
+                }
+            }
+            .dl_pricing_list .dl_listing_desc{
+                color: $white;
+            }
+            .dl_cu_btn{
+                &.btn_2{
+                    color: $white;
+                    background-color: #11CB6D;
+
+                }
+            }
+            .dl_pricing_list{
+                border-top: 1px solid #5065FA;
+                ul{
+                    li{
+                        img{
+                            -webkit-filter: brightness(0) invert(1);
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                }
+            } 
+            .dl_desc{
+                a{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+/******** popular pricing style 03 end  ********/

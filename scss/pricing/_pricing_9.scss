@@ -1,0 +1,172 @@
+/******** popular pricing style 09 here ********/
+.dl_pricing_plan{
+    &.dl_style_09{
+        .dl_pricing_title{
+            text-align: left;
+            .dl_pack_name{
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 6px;
+                color: #000000;
+                @media (max-width: 991px) {
+                    font-size: 14px;
+                }
+            }
+            .dl_price{
+                font-size: 18px;
+                font-weight: 500;
+                color: #222222;
+                @media (max-width: 991x) {
+                    font-size: 14px;
+                }
+                .dl_length{
+                    font-size: 12px;
+                }
+            }
+            .dl_cu_btn{
+                font-family: $pop_font;
+                padding: 7px 20px;
+                border-radius: 0;
+                margin-top: 14px;
+                @media (max-width: 991px) {
+                    padding: 9px 19px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    
+        .dl_pricing_table_nav {
+            display: flex;
+            top: 0px;
+            z-index: 10;
+            padding-bottom: 14px;
+
+            flex-wrap: wrap;
+            @media (min-width: 991px) {
+                display: none;
+            }
+        }
+    
+        .dl_pricing_table_inner {
+            list-style: none;
+            flex: 1;
+            @media (max-width: 991px) {
+                flex: 50% 0 0;
+            }
+        }
+    
+        .dl_pricing_table_inner:last-child {
+            border-right: 1px solid #F5F5F5;
+        }
+    
+        .dl_pricing_table_inner {
+            width: 100%;
+            border: 1px solid #F5F5F5;
+            border-right: 0;
+            padding: 10px;
+            background: #FFF;
+            height: 65px;
+            text-align: center;
+            @media (max-width: 991px) {
+                height: auto;
+            }
+        }
+    
+        .dl_pricing_table_inner.active {
+            background: #F5F5F5;
+            color: #000;
+        }
+    
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 100%;
+        }
+    
+        th {
+            display: none;
+        }
+    
+        td,
+        th {
+            border: 1px solid #E7F0FA;
+            padding: 20px;
+            empty-cells: show;
+            font-size: 15px;
+            font-weight: 400;
+            color: #1D1D1D;
+        }
+    
+        td,
+        th {
+            text-align: left;
+            i{
+                color: #0161FF;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+    
+        td+td,
+        th+th {
+            text-align: center;
+            display: none;
+        }
+    
+        td.default {
+            display: table-cell;
+        }
+    
+        .dl_hide {
+            border: 0;
+            background: none;
+        }
+    
+        td+td,
+        th+th {
+            background-color: #fff;
+            border: 1px solid #E9E9E9;
+            color: $heading_color;
+        }
+        td[colspan="5"]{
+            background-color: #F1F1F1;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: $pop_font;
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+
+    
+        @media (min-width: 991px) {
+            th {
+                padding: 20px 25px !important;
+            }
+    
+            td,
+            th {
+                display: table-cell !important;
+            }
+    
+            td,
+            th {
+                width: 330px;
+                padding: 15px 20px;
+                color: #1D1D1D;
+            }
+    
+            td+td,
+            th+th {
+                width: auto;
+            }
+        }
+    }
+}
+
+/******** popular pricing style 09 end ********/

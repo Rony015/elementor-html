@@ -1,0 +1,91 @@
+/******** popular pricing style 01 here ********/
+.dl_pricing_plan{
+    &.dl_style_01{
+        padding: 50px 50px 57px;
+        background-color: #f6f7fa;
+        position: relative;
+        @include transform_time(.5s);
+        @media #{$tab}{
+            margin-bottom: 30px;
+        }
+        .dl_pricing_title{
+            color: #f7ab48;
+            font-size: 20px;
+            margin-bottom: 0;
+            line-height: 28px;
+            &.dl_text_primary{
+                color: #5576f3;
+            }
+            &.dl_text_success{
+                color: #5ce374;
+            }
+        }
+        .dl_desc{
+            color: #c6cbd8;
+        }
+        .dl_pricing_img{
+            min-height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .dl_desc + .dl_pricing_img{
+            margin-top: 38px;
+        }
+        .dl_price{
+            font-size: 40px;
+            font-weight: 700;
+            color: #051441;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #e9e9f4;
+            span{
+                font-size: 16px;
+                color: #677294;
+            }
+        }
+        .dl_pricing_img + .dl_price{
+            margin-top: 26px;
+        }
+        .dl_pricing_list{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                font-size: 16px;
+                font-weight: 300;
+                margin: 15px 0;
+            }
+        }
+        .dl_price + .dl_pricing_list{
+            margin-top: 43px;
+        }
+        .dl_pricing_list + .dl_cu_btn{
+            margin-top: 37px;
+        }
+        &:hover{
+            box-shadow: 0px 30px 60px 0px rgba(0, 11, 40, 0.14);
+            background-color: $white;
+        }
+        .dl_cu_btn{
+            border-radius: 4px;
+        }
+        .gradient_btn{
+            box-shadow: 0px 20px 60px 0px rgba(0, 11, 40, 0.06);
+        }
+        .dl_popular_tricker{
+            position: absolute;
+            top: 0;
+            left: 0;
+            .dl_text{
+                color: #fff;
+                font-size: 20px;
+                position: absolute;
+                left: 6px;
+                top: 24px;
+                margin-bottom: 0;
+                transform: rotate(-46deg);
+            }
+        }
+    }
+}
+/******** popular pricing style 01 end ********/

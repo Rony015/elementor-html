@@ -1,0 +1,107 @@
+/** :::::::::::::::: blog post 3 css :::::::::::::::**/
+.single_blog_post {
+    &.style_3 {
+        .single_blog_content {
+            background: #fff;
+            padding: 20px 20px 12px;
+        }
+        .post_thumb {
+            overflow: hidden;
+            border-radius: 5px;
+            display: flex;
+            img{
+                min-width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+            }
+        }
+    
+        .tag {
+            color: #5468FF;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.38px;
+            line-height: 1.4;
+            margin-bottom: 13px;
+            display: inline-block;
+        }
+    
+        .dl_title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 0;
+            a {
+                color: #141C2A;
+                &:hover {
+                    color: #5468FF;
+                }
+            }
+        }
+        .dl_post_meta + .dl_title{
+            margin-top: 7px;
+        }
+
+        .dl_post_meta{
+            @media (min-width: 768px){
+                display: flex;
+                align-items: center;
+            }
+            p{
+                position: relative;
+                z-index: 1;
+                @media (min-width: 768px){
+                    padding-right: 40px;
+                    &:after{
+                        position: absolute;
+                        content: "";
+                        right: 12px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: #DAD8D8;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                    }
+                    &:last-child{
+                        padding-right: 0;
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
+                @media #{$mobile}{
+                    margin-bottom: 10px;
+                }
+            }
+            .dl_post_author{
+                font-size: 14px;
+                color: #A7ABBF;
+                a{
+                    color: #404773;
+                }
+            }
+            .dl_post_date{
+                margin-left: 10px;
+                color: #A7ABBF;
+            }
+            .tag_list{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                li{
+                    display: inline-block;
+                    font-size: 14px;
+                    a{
+                        color: #8D90A9;
+                        &:hover{
+                            color: #5468FF; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/** :::::::::::::::: blog post 3 css :::::::::::::::**/

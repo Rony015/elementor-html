@@ -1,0 +1,95 @@
+/** :::::::::::::::: card style 2 css :::::::::::::::**/
+.masonry_card_style{
+    padding: 60px 40px;
+    position: relative;
+    z-index: 1;
+    height: 550px;
+    @media #{$mobile}{
+        padding: 40px 30px;
+    }
+    &.fog_bg{
+        background-color: #D9D6FF;
+    }
+    &.frost_bg{
+        background-color: #EAF9E6;
+    }
+    &.navajo_white{
+        background-color: #FFE5AC;
+    }
+    .round_shape_1, .round_shape_2{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        
+    }
+    .round_shape_3{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        z-index: -1;
+        @media #{$mobile}{
+            max-width: 80%;
+            top: 30%;
+        }
+    }
+    .dl_card_title{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1;
+        color: #2D2D2D;
+        margin-bottom: 9px;
+        @media #{$mobile}{
+            font-size: 22px;
+        }
+    }
+    .dl_desc{
+        font-size: 16px;
+        color: #706F6F;
+    }
+    .dl_cu_btn{
+        position: absolute;
+        left: 40px;
+        bottom: 53px;
+        padding: 9px 24px;
+        line-height: 20px;
+        @media #{$mobile}{
+            left: 30px;
+            bottom: 40px;
+        }
+    }
+    &.style_2{
+        padding: 40px 30px;
+        height: 260px;
+        .round_shape_1{
+            max-width: 50%;
+        }
+        .round_shape_2{
+            max-width: 35%;
+        }
+        .round_shape_3{
+            right: -30px;
+            top: 35px;
+            @media #{$tab}{
+                max-width: 45%;
+                top: 30%;
+                right: 0;
+            }
+            @media #{$medium_device}{
+                right: 0;
+            }
+        }
+        .dl_card_title{
+            font-size: 22px;
+            line-height: 1;
+            font-weight: 700;
+            color: #2D2D2D;
+        }
+        .dl_cu_btn{
+            position: absolute;
+            left: 30px;
+            bottom: 40px;
+        }
+    }
+}
+/** :::::::::::::::: card style  2 css :::::::::::::::**/

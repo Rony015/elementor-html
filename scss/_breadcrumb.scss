@@ -1,0 +1,37 @@
+.dl_breadcrumb_section{
+    height: 500px;
+    @include background ('../img/breadcrumb_bg.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media #{$tab}{
+        height: 400px;
+    }
+    .dl_breadcrumb_part_inner{
+        text-align: center;
+        padding-top: 95px;
+        @media #{$tab}{
+            padding-top: 60px;
+        }
+        h2{
+            font-size: 60px;
+            color: $white;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            @media #{$tab}{
+                font-size: 40px;
+            }
+        }
+        p{
+            color: $white;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            @media #{$tab}{
+                letter-spacing: 2px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

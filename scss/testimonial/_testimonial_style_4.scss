@@ -1,0 +1,105 @@
+/******** testimonial style 4 css ********/
+.dl_testimonial_section{
+    &.dl_sec_padding{
+        padding: 230px 0;
+        @media #{$mobile}{
+            padding: 100px 0;
+        }
+        @media #{$tab_device}{
+            padding: 120px 0;
+        }
+        @media #{$medium_device}{
+            padding: 150px 0;
+        }
+    }
+}
+.dl_testimonial_slider_thumb{
+    position: relative;  
+    width: 100%;
+    height: 100%;
+    @media #{$tab}{
+        height: 400px;
+        margin-bottom: 60px;
+    }
+    [class^="client_thumb_"] {
+        position: absolute;
+    }
+    .client_thumb_1{
+        top: -17%;
+        left: 20%;
+        @media #{$tab}{
+            top: 0;
+        }
+    }
+    .client_thumb_2{
+        top: 38%;
+        left: 40%;
+    }
+    .client_thumb_3{
+        bottom: 0;
+        right: 27%;
+        @media #{$tab}{
+            bottom: 76px;
+            right: 7%;
+        }
+    } 
+    .client_thumb_4{
+        top: 36%;
+        left: -1%;
+    }
+    .client_thumb_5{
+        bottom: -15%;
+        left: 10%;
+        @media #{$tab}{
+            bottom: 0;
+        }
+    }
+    .client_thumb_6{
+        right: 20%;
+        top: 2%;
+        img{
+            max-width: 150px;
+        }
+    }
+}
+
+.dl_single_testimonial_slider{
+    &.style_04{
+        .dl_sub_title{
+            color: #C1C2C7;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .dl_content{
+            color: #232D3E;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 38px;
+            margin-bottom: 0;
+        }
+        .dl_client_info{
+            position: relative;
+            z-index: 1;
+            margin-top: 45px;
+            padding-left: 80px;
+            margin-bottom: 20px;
+            .dl_client_img{
+                position: absolute;
+                left: 0;
+                width: 50px;
+                height: 50px;
+                top: -7px;
+            }
+            .dl_name{
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 3px;
+                line-height: 1;
+            }
+            .dl_position{
+                font-size: 14px;
+            }
+        }
+    }
+}
+/******** testimonial style 4 css end ********/

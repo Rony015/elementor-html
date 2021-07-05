@@ -1,0 +1,51 @@
+/******** testimonial style 6 css ********/
+.dl_testimonial_section{
+    &.dl_testimonial_bg_img_1{
+        @include background ('../img/testimonial_bg_shape.png');
+    }
+}
+.dl_single_testimonial_slider{
+    &.style_06{
+        display: flex;
+        align-items: center;
+        @media #{$tab}{
+            display: block;
+            text-align: center;
+        }
+        .quotation_mark{
+            margin-bottom: 20px;
+        }
+        .dl_content{
+            color: #BEC0C1;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 34px;
+            margin-bottom: 0;
+        }
+        .dl_client_description{
+            padding-left: 70px;
+            @media #{$tab}{
+                padding-left: 0;
+                margin-top: 30px;
+                text-align: center;
+            }
+        }
+        .dl_client_info{
+            position: relative;
+            z-index: 1;
+            margin-top: 20px;
+            .dl_name{
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 0;
+                margin-top: 10px;
+                color: #0071FF;
+            }
+            .dl_position{
+                font-size: 14px;
+                color: #93A5A7;
+            }
+        }
+    }
+}
+/******** testimonial style 6 css end ********/

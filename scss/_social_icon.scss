@@ -1,0 +1,216 @@
+.dl_social_icon {
+    text-align: center;
+    .dl_social_btn{
+        margin: 8px;
+        @include transform_time(.3s);
+    }
+    a[href*="facebook"] {
+        border: 2px solid #375eaf;
+        color: #375eaf;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: #375eaf;
+            color: $white;
+        }
+    }
+    a[href*="twitter"] {
+        border: 2px solid #1da1f2;
+        color: #1da1f2;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: #1da1f2;
+            color: $white;
+        }
+    }
+    a[href*="telegram"] {
+        border: 2px solid #ea4335;
+        color: #ea4335;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: #ea4335;
+            color: $white;
+        }
+    }
+    a[href*="linkedin"] {
+        border: 2px solid #0073b1;
+        color: #0073b1;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: #0073b1;
+            color: $white;
+        }
+    }
+    a[href*="instagram"] {
+        border: 2px solid #c13584;
+        color: #c13584;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: #c13584;
+            color: $white;
+        }
+    }
+    a[href*="pinterest"] {
+        border: 2px solid #f90d4a;
+        color: #f90d4a;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: #f90d4a;
+            color: $white;
+        }
+    }
+    a[href*="skype"] {
+        border: 2px solid #00b9f5;
+        color: #00b9f5;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: #00b9f5;
+            color: $white;
+        }
+    }
+    &.dl_social_ixon_style_1 {
+        .dl_social_btn {
+            display: inline-block;
+            padding: 7px 22px;
+            text-transform: capitalize;
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+    &.dl_social_ixon_style_2 {
+        .dl_social_btn {
+            border-width: 2px;
+            border-color: rgb(235, 237, 242);
+            border-style: solid;
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+            width: 56px;
+            height: 56px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 3px;
+        }
+        a[href*="facebook"] {
+            &:hover {
+                border-color: #375eaf;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="twitter"] {
+            &:hover {
+                border-color: #1da1f2;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="telegram"] {
+            &:hover {
+                border-color: #ea4335;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="linkedin"] {
+            &:hover {
+                border-color: #0073b1;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="instagram"] {
+            &:hover {
+                border-color: #c13584;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="pinterest"] {
+            &:hover {
+                border-color: #f90d4a;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="skype"] {
+            &:hover {
+                border-color: #00b9f5;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+    }
+    &.dl_social_ixon_style_3 {
+        .dl_social_btn {
+            border-width: 2px;
+            border-color: rgb(255, 255, 255);
+            border-style: solid;
+            border-radius: 4px;
+            background-color: rgb(255, 255, 255);
+            width: 56px;
+            height: 56px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 3px;
+        }
+        a[href*="facebook"] {
+            &:hover {
+                border-color: #375eaf;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="twitter"] {
+            &:hover {
+                border-color: #1da1f2;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="telegram"] {
+            &:hover {
+                border-color: #ea4335;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="linkedin"] {
+            &:hover {
+                border-color: #0073b1;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="instagram"] {
+            &:hover {
+                border-color: #c13584;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="pinterest"] {
+            &:hover {
+                border-color: #f90d4a;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+        a[href*="skype"] {
+            &:hover {
+                border-color: #00b9f5;
+                box-shadow: 0px 20px 20px 0px rgba(5, 36, 69, 0.1);
+            }
+        }
+    }
+    &.dl_social_ixon_style_4{
+        .dl_social_btn {
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 4px;
+            width: 56px;
+            height: 56px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 3px;
+        }
+    }
+}

@@ -1,0 +1,321 @@
+.dl_feature_flip_box {
+    .flip_box_inner {
+        margin: 0 auto;
+        position: relative;
+        -webkit-perspective: 400px;
+        -moz-perspective: 400px;
+        min-height: 400px;
+        @media #{$tab}{
+            margin: 15px 0;
+        }
+    }
+    
+    .flip_box_inner .flip_box_front,
+    .flip_box_inner .flip_box_back {
+        text-align: center;
+    }
+    .description{
+        color: $white;
+    }
+    .flip_box_inner .flip_box_front {
+        height: inherit;
+        position: absolute;
+        top: 0;
+        z-index: 900;
+        text-align: center;
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        -moz-transform: rotateX(0deg) rotateY(0deg);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        width: 100%;
+        height: 100%;
+        &.rotate_Y{
+            -webkit-transition: all .6s ease-in-out;
+            -moz-transition: all .6s ease-in-out;
+            -ms-transition: all .6s ease-in-out;
+            -o-transition: all .6s ease-in-out;
+            transition: all .6s ease-in-out;
+        }
+    }
+    .flip_box_inner .flip_box_back {
+        height: inherit;
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+        -webkit-transform: rotateX(-180deg);
+        -moz-transform: rotateX(-180deg);
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        width: 100%;
+        height: 100%;
+        &.rotate_Y{
+            -webkit-transform: rotateX(0);
+            -moz-transform: rotateX(0);
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -webkit-transition: all .6s ease-in-out;
+            -moz-transition: all .6s ease-in-out;
+            -ms-transition: all .6s ease-in-out;
+            -o-transition: all .6s ease-in-out;
+            transition: all .6s ease-in-out;
+        }
+    }
+    .flip_box_inner:hover .flip_box_front {
+        z-index: 900;
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        &.rotate_Y{
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+        }
+    }
+    .flip_box_inner:hover .flip_box_back {
+        z-index: 1000;
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        -moz-transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    .front_box, .back_box {
+        background-color: #14bcc8;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 400px;
+    }
+
+    .back_box {
+        background-color: #5758e0;
+    }
+    .front_box  {
+        .description{
+            display: inline-block;
+            color: #fff;
+            font-size: 26px;
+            margin-bottom: 0;
+            padding: 30px;
+        }
+    }
+    .flip_box_content{
+        padding: 30px;
+        .title{
+            display: inline-block;
+            color: #fff;
+            font-size: 26px;
+            margin-bottom: 0;
+        }
+        .description{
+            color: #fff;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .title + .description{
+            color: rgba(255,255,255,.62);
+        }
+        .animated_border{
+            padding: 5px 0;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: inline-block;
+            line-height: 1;
+            &:before{
+                background-color: #fff;
+            }
+        }
+        .round_btn{
+            margin-top: 40px;
+        }
+    }
+}
+
+/* counter flip box css */
+.dl_flip_countdown_wrapper{
+    .dl_colum_4 {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        -webkit-column-gap: 30px;
+        -moz-column-gap: 30px;
+        column-gap: 30px;
+        @media #{$xs_mobile} {
+            -ms-grid-columns: 1fr;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        @media #{$large_mobile} {
+            -ms-grid-columns: 1fr 30px 1fr;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media #{$tab_device} {
+            -ms-grid-columns: 1fr 30px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .dl_countdown_inner {
+        border-radius: 20px;
+        padding: 60px 40px;
+        text-align: center;
+        &.dl_bg_1 {
+            background: linear-gradient(141deg, #A762FF 15.32%, #D500F8 87.5%);
+        }
+        &.dl_bg_2 {
+            background: linear-gradient(141deg, #FFB867 15.32%, #FF675E 87.5%);
+        }
+        &.dl_bg_3 {
+            background: linear-gradient(141deg, #95E294 15.32%, #0ACD88 87.5%);
+        }
+        &.dl_bg_4 {
+            background: linear-gradient(141deg, #72CFFF 15.32%, #1595FF 87.5%);
+        }
+        span {
+            font-size: 42px;
+            font-weight: 400;
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 10px;
+            display: inline-block;
+            font-family: $abr_font;
+        }
+
+        .dl_desc {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+    .dl_feature_flip_box .flip_box_inner {
+        -webkit-perspective: 178px;
+        -moz-perspective: 178px;
+        min-height: 178px;
+        .front_box, .back_box {
+            min-height: 178px;
+            background-color: transparent;
+        }
+        .dl_countdown_inner{
+            weight: 100%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+/* counter flip box css end */
+
+/* icon flip box css */
+.dl_icon_flip_box{
+    .front_box, .back_box {
+        background-color: transparent;
+        min-height: auto;
+    }
+    .flip_box_inner {
+        -webkit-perspective: 300px;
+        -moz-perspective: 300px;
+        min-height: 300px;
+    }
+    .dl_flip_icon_box_wrapper{
+        padding: 70px 40px 40px;
+        border-radius: 5px;
+        background-color: $white;
+        text-align: center;
+        margin-bottom: 65px;
+        
+        .dl_icon{
+            height: 70px;
+            width: 70px;
+            background-color: #E5F9F0;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: -35px;
+            img{
+                max-width: 30px;
+            }
+            i{
+                font-size: 30px;
+                color: #10BF7C;
+            }
+            &.dl_color_1{
+                background-image: -moz-linear-gradient( 40deg, rgb(44,130,237) 0%, rgb(56,208,252) 100%);
+                background-image: -webkit-linear-gradient( 40deg, rgb(44,130,237) 0%, rgb(56,208,252) 100%);
+                background-image: -ms-linear-gradient( 40deg, rgb(44,130,237) 0%, rgb(56,208,252) 100%);
+                box-shadow: 0px 10px 30px 0px rgba(44, 130, 237, 0.4);
+            }
+            &.dl_color_2{
+                background-image: -moz-linear-gradient( 40deg, rgb(87,178,42) 0%, rgb(119,234,61) 100%);
+                background-image: -webkit-linear-gradient( 40deg, rgb(87,178,42) 0%, rgb(119,234,61) 100%);
+                background-image: -ms-linear-gradient( 40deg, rgb(87,178,42) 0%, rgb(119,234,61) 100%);
+                box-shadow: 0px 10px 30px 0px rgba(87, 178, 42, 0.4);
+            }
+            &.dl_color_3{
+                background-image: -moz-linear-gradient( -27deg, rgb(255,137,1) 0%, rgb(255,178,27) 100%);
+                background-image: -webkit-linear-gradient( -27deg, rgb(255,137,1) 0%, rgb(255,178,27) 100%);
+                background-image: -ms-linear-gradient( -27deg, rgb(255,137,1) 0%, rgb(255,178,27) 100%);
+                box-shadow: 0px 10px 30px 0px rgba(255, 155, 18, 0.4);
+            }
+            &.dl_color_4{
+                background-image: -moz-linear-gradient( 40deg, rgb(255,0,0) 0%, rgb(255,89,89) 100%);
+                background-image: -webkit-linear-gradient( 40deg, rgb(255,0,0) 0%, rgb(255,89,89) 100%);
+                background-image: -ms-linear-gradient( 40deg, rgb(255,0,0) 0%, rgb(255,89,89) 100%);
+                box-shadow: 0px 10px 30px 0px rgba(255, 23, 23, 0.4);
+            }
+            &.dl_color_5{
+                background-image: -moz-linear-gradient( 40deg, rgb(80,56,255) 0%, rgb(134,138,255) 100%);
+                background-image: -webkit-linear-gradient( 40deg, rgb(80,56,255) 0%, rgb(134,138,255) 100%);
+                background-image: -ms-linear-gradient( 40deg, rgb(80,56,255) 0%, rgb(134,138,255) 100%);
+                box-shadow: 0px 10px 30px 0px rgba(74, 39, 205, 0.4);
+            }
+            &.dl_color_6{
+                background-image: -moz-linear-gradient( 40deg, rgb(255,12,75) 0%, rgb(255,33,153) 100%);
+                background-image: -webkit-linear-gradient( 40deg, rgb(255,12,75) 0%, rgb(255,33,153) 100%);
+                background-image: -ms-linear-gradient( 40deg, rgb(255,12,75) 0%, rgb(255,33,153) 100%);
+                box-shadow: 0px 10px 30px 0px rgba(255, 0, 90, 0.4);
+
+            }
+        }
+        .dl_title{
+            font-size: 22px;
+            color: #051441;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .dl_desc{
+            font-size: 15px;
+            color: #6a7c92;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+        .dl_icon + .dl_desc{
+            margin-top: 25px;
+        }
+    }
+} 
+ 

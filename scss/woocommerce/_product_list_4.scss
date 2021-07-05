@@ -1,0 +1,100 @@
+.dl_product_list{
+    &.style_4{
+        &.grid-item-height{
+            height: 206px;
+        }
+        &.grid-item-height__2{
+            height: 442px;
+        }
+        .dl_product_list_wapper{
+            border-radius: 20px;
+            display: inline-flex;
+            .product_thumb{
+                display: inline-flex;
+                overflow: hidden;
+                border-radius: 20px;
+                img{
+                    max-width: 100%;
+                    border-radius: 20px;
+                    transform: scale(1);
+                    @include transform_time(.3s);
+                    @media #{$tab}{
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    @media #{$medium_device}{
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            &:hover{
+                .product_thumb{
+                    img{
+                        transform: scale(1.05);
+                    }
+                } 
+            }
+            .dl_product_list_content{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 55px;
+            }
+            .dl_category{
+                display: inline-block;
+                font-size: 13px;
+                text-transform: uppercase;
+                color: #000000;
+                line-height: 1;
+                margin-bottom: 21px;
+                letter-spacing: 2px;
+            }
+            .dl_product_name{
+                font-size: 27px;
+                font-weight: 700;
+                color: #000000;
+                line-height: 1.33;
+                text-transform: uppercase;
+                letter-spacing: 0;
+                margin-bottom: 0;
+                @media #{$tab}{
+                    font-size: 20px;
+                }
+                span{
+                    font-weight: 300;
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .dl_cu_btn{
+                margin-top: 50px;
+                @media #{$tab}{
+                    margin-top: 25px;
+                }
+            }
+            &.style_2{
+                .dl_product_list_content{
+                    padding: 30px;
+                    -ms-flex-wrap: wrap!important;
+                    flex-wrap: wrap!important;
+                    display: -ms-flexbox!important;
+                    display: flex!important;
+                    -ms-flex-line-pack: justify!important;
+                    align-content: space-between!important;
+                    height: 100%;
+                    width: 100%;
+                    .dl_title{
+                        width: 100%;
+                    }
+                    .link_animate_border{
+                        display: inline-block;
+                    }
+                }
+                .dl_product_name{
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}

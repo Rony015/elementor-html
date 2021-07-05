@@ -1,0 +1,99 @@
+.dark_switch_box {
+    /* Switch 1 Specific Styles Start */
+    input[type="checkbox"]{
+        &.switch_1 {
+            font-size: 30px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 3.5em;
+            height: 1.5em;
+            background: #ddd;
+            border-radius: 3em;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            &:checked{
+                background: #0ebeff;
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                width: 1.5em;
+                height: 1.5em;
+                border-radius: 50%;
+                background: #fff;
+                -webkit-box-shadow: 0 0 .25em rgba(0, 0, 0, .3);
+                box-shadow: 0 0 .25em rgba(0, 0, 0, .3);
+                -webkit-transform: scale(.7);
+                transform: scale(.7);
+                left: 0;
+                -webkit-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+            }
+            &:checked:after {
+                left: calc(100% - 1.5em);
+            }
+        }
+    }
+    /* Switch 1 Specific Style End */
+
+
+    /* Switch 2 Specific Style Start */
+    input[type="checkbox"]{
+        &.switch_2 {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 100px;
+            height: 8px;
+            background: #444;
+            border-radius: 5px;
+            position: relative;
+            outline: 0;
+            cursor: pointer;
+            &:before,
+            &:after {
+                position: absolute;
+                content: "";
+                -webkit-transition: all .25s;
+                transition: all .25s;
+            }
+            &:before {
+                width: 40px;
+                height: 40px;
+                background: #ccc;
+                border: 5px solid #666;
+                border-radius: 50%;
+                top: 50%;
+                left: 0;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            &:after {
+                width: 30px;
+                height: 30px;
+                background: #666;
+                border-radius: 50%;
+                top: 50%;
+                left: 10px;
+                -webkit-transform: scale(1) translateY(-50%);
+                transform: scale(1) translateY(-50%);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+            &:checked:before {
+                left: calc(100% - 35px);
+            }
+        
+            &:checked:after {
+                left: 75px;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+    }
+    /* Switch 2 Specific Style End */
+}

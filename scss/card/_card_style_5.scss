@@ -1,0 +1,97 @@
+/** :::::::::::::::: card style 5 css :::::::::::::::**/
+.dl_card_box{
+    &.dl_card_style_05{
+        background-color: #fff;
+        @media #{$tab}{
+            margin-bottom: 40px;
+        }
+        .dl_title{
+            margin-bottom: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            margin-left: 38px;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 29px;
+            a{
+                color: #000000;
+            }
+        }
+        .dl_card_box_shape{
+            position: relative;
+            min-height: 300px;
+            overflow: hidden;
+            [class^="dl_parallax_"] {
+                position: absolute;
+            }
+            .layer2{
+                position: relative !important;
+            }
+            &.dl_style_01{
+                .dl_parallax_img{
+                    &:nth-child(1){
+                        top: 30%;
+                        left: 0;
+                    }
+                    &:nth-child(2){
+                        top: 15%;
+                        left: 5%;
+                    }
+                    &:nth-child(3){
+                        bottom: 5%;
+                        left: 5%;
+                    }
+                    &:nth-child(4){
+                        top: 5%;
+                        right: 0;
+                    }
+                    &:nth-child(5){
+                        top: 5%;
+                        left: 10%;
+                    }
+                }
+            }
+            &.dl_style_2{
+                .dl_parallax_img{
+                    &:nth-child(1){
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                    }
+                    &:nth-child(2){
+                        top: 31%;
+                        left: 16%;
+                    }
+                    &:nth-child(3){
+                        top: 5%;
+                        right: 0;
+                    }
+                }
+            }
+            &.dl_style_3{
+                .dl_parallax_img{
+                    &:nth-child(1){
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                    }
+                    &:nth-child(2){
+                        top: 45%;
+                        left: 15px;
+                    }
+                    &:nth-child(3){
+                        top: 5%;
+                        right: 20%;
+                    }
+                    &:nth-child(4){
+                        bottom: 22%;
+                        right: 10%;
+                    }
+                }
+            }
+        }
+    }
+}
+/** :::::::::::::::: card style 5 css end :::::::::::::::**/

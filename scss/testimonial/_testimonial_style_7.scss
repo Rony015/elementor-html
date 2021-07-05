@@ -1,0 +1,90 @@
+/******** testimonial style 7 css ********/
+.dl_testimonial_slider_wrapper{
+    &.style_07{
+        display: flex;
+        align-items: center;
+        @media #{$tab}{
+            display: block;
+            text-align: center;
+        }
+        .quotation_mark{
+            margin-bottom: 20px;
+        }
+        .dl_client_img_list{
+            height: 255px;
+            width: 255px;
+            border-radius: 5px;
+            background-color: #D02726;
+            position: relative;
+            padding: 20px;
+            flex: 26% 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media #{$tab}{
+                margin: 0 auto;
+            }
+            .dl_quotation_thumb{
+                max-width: 100%;
+            }
+            .dl_client_thumb{
+                position: absolute;
+                right: -53px;
+                bottom: -53px;
+            }
+        }
+        .dl_content{
+            color: #232D3E;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 34px;
+            margin-bottom: 0;
+        }
+        .dl_client_description{
+            padding-left: 135px;
+            @media #{$tab}{
+                padding-left: 0;
+                margin-top: 30px;
+                text-align: center;
+            }
+        }
+        .dl_client_info{
+            position: relative;
+            z-index: 1;
+            margin-top: 20px;
+            .dl_name{
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 0;
+                margin-top: 10px;
+                color: #0071FF;
+            }
+            .dl_position{
+                font-size: 14px;
+                color: #232D3E;
+            }
+        }
+    }
+}
+.dl_testimonial_slider_paginition{
+    .dl_swiper_pagination.style_2 {
+        position: absolute;
+        left: 41%;
+        margin: 0;
+        bottom: 13px;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+    }
+    .dl_swiper_pagination.style_2 .swiper-pagination-bullet{
+        width: 5px !important;
+        height: 5px !important;
+        margin: 0 5px;
+        @include transform_time(.3s);
+        &.swiper-pagination-bullet-active{
+            width: 10px !important;
+            height: 10px !important;
+        }
+    }
+}
+/******** testimonial style 7 css end ********/

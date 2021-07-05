@@ -1,0 +1,79 @@
+.dl_product_list{
+    &.style_3{
+        @media #{$tab}{
+            margin-bottom: 40px;
+        }
+        .dl_product_list_wapper{
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            position: relative;
+            z-index: 2;
+            @media #{$tab}{
+               flex-wrap: wrap;
+            }
+            &.bg_1{
+                background: linear-gradient(103.57deg, #FFA95B 0%, #FFCEA2 100%);
+            }
+            &.bg_2{
+                background: linear-gradient(103.73deg, #80C3F8 0%, #B2D7F4 99.01%);
+            }
+            .dl_product_thumb{
+                z-index: -1;
+                img{
+                    max-width: 100%;
+                }
+                @media (min-width: 991px){
+                   position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%); 
+                }
+                @media #{$medium_device}{
+                    max-width: 60%;
+                }
+                @media #{$tab}{
+                    position: relative;
+                    margin-top: 20px;
+                }
+            }
+            .dl_product_list_content{
+                padding-right: 15px;
+            }
+            .dl_category{
+                display: inline-block;
+                font-size: 13px;
+                text-transform: uppercase;
+                color: #fff;
+                line-height: 1;
+                margin-bottom: 21px;
+                letter-spacing: 2px;
+            }
+            .dl_product_name{
+                font-size: 24px;
+                font-weight: 700;
+                color: #fff;
+                line-height: 34px;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            
+                @media #{$tab}{
+                    font-size: 20px;
+                }
+                span{
+                    font-weight: 300;
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .dl_cu_btn{
+                margin-top: 50px;
+                padding: 11px 20px;
+                line-height: 16px;
+                @media #{$tab}{
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}

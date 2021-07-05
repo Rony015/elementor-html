@@ -1,0 +1,14 @@
+.dl_thumb_slider_wrapper{
+    &.dl_thumb_slider_style_01{
+        .dl_slider_thumb{
+            height: 635px;
+            display: inline-block;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

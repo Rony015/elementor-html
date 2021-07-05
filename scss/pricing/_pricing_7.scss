@@ -1,0 +1,108 @@
+/******** popular pricing style 07 here ********/
+.dl_pricing_plan{
+    &.dl_style_07{
+        padding: 50px 50px 57px;
+        background-color: #fff;
+        position: relative;
+        @include transform_time(.5s);
+        border-radius: 20px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 44px;
+        .dl_pricing_shape{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .dl_pricing_title{
+            color: #222222;
+            font-size: 23px;
+            margin-bottom: 0;
+            font-weight: 700;
+            line-height: 28px;
+            font-family: $pop_font;
+            margin-bottom: 8px;
+        }
+        .dl_pricing_desc{
+            color: #999999;
+            font-size: 14px;
+            font-family: $inter_font;
+        }
+        .dl_price{
+            font-size: 50px;
+            font-weight: 700;
+            color: #0161FF;
+            margin: 22px 0 25px;
+            font-family: $pop_font;
+            span{
+                font-size: 15px;
+                color: #0161FF;
+            }
+        }
+        .dl_pricing_list{
+            margin: 0;
+            padding: 0;
+            display: grid;
+            &.dl_colum_2{
+                @media (min-width: 768px){
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 30px;
+                }
+            }
+            li{
+                list-style: none;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: $pop_font;
+                margin: 9px 0;
+                display: block;
+                i{
+                    font-size: 12px;
+                    color: #0161FF;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .dl_cu_btn{
+            margin-top: 34px;
+            padding: 14px 50px;
+            line-height: 18px;
+            border-radius: 50px;
+        }
+    }
+}
+.dl_pricing_plan_info{
+    table{
+        width: 100%;
+        text-align: left;
+        border-spacing: 0;
+        font-family: $pop_font;
+        td, th{
+            padding: 23px 30px;
+            @media #{$mobile}{
+                padding: 15px 20px;
+            }
+        }
+        tr{
+            border-radius: 10px;
+            &:nth-child(2n+2){
+                background-color: #fff;
+            }
+        }
+        th{
+            font-size: 22px;
+            font-weight: 600;
+            color: #222222;
+            @media #{$mobile}{
+                font-size: 16px;
+            }
+        }
+        td{
+            font-size: 15px;
+            font-weight: 500;
+            color: #1D1D1D;
+        }
+    }
+}
+/******** popular pricing style 07 end ********/

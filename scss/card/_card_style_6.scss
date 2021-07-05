@@ -1,0 +1,71 @@
+/** :::::::::::::::: card style 6 css :::::::::::::::**/
+.dl_card_box{
+    &.dl_card_style_06{
+        @media #{$tab}{
+            margin-bottom: 40px;
+        }
+        &.yellow_bg{
+            background-color: #F5CD6A;
+        }
+        &.emerald_bg{
+            background-color: #58D391;
+        }
+        &.pink_bg{
+            background-color: #FF8D8A;
+        }
+        &.heliotrope_bg{
+            background-color: #A97DFF;
+        }
+        text-align: center;
+        padding: 30px;
+        border-radius: 60px 0 60px 0;
+        @include transform_time(.3s);
+        .dl_title{
+            font-size: 20px;
+            line-height: 1;
+            margin-bottom: 0;
+            a{
+                color: #fff;
+            }
+        }
+        .dl_title + .dl_profile_img{
+            margin-top: 24px;  
+        }
+        .dl_title + .dl_desc{
+            margin-top: 15px;  
+        }
+        .dl_profile_img + .dl_title {
+            margin-top: 24px;  
+        }
+        .dl_profile_img{
+            position: relative;
+            display: inline-block;
+            img{
+                max-width: 100%;
+            }
+            .dl_profile_img_shape{
+                position: absolute;
+                left: 0;
+                bottom: 10px;
+                @include transform_time(.3s);
+            }
+        }
+        .dl_desc{
+            font-size: 15px;
+            color: #fff;
+            line-height: 1.6;
+        }
+        .dl_profile_img + .dl_desc{
+            margin-top: 40px;
+        }
+        &:hover{
+            border-radius: 0 60px 0 60px;
+            .dl_profile_img{
+                .dl_profile_img_shape{
+                    transform: rotate(25deg);
+                }
+            }
+        }
+    }
+}
+/** :::::::::::::::: card style 6 css end :::::::::::::::**/

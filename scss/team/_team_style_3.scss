@@ -1,0 +1,138 @@
+/** :::::::::::::::: team style 3 css :::::::::::::::**/
+.dl_team_member_wrapper{
+    &.style_3{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        .dl_team_member_thumb {
+            display: flex;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            &:after{
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(17,17,17, 0);
+                z-index: 2;
+                opacity: 0;
+                @include transform_time(.3s);
+            }
+        }
+        .dl_team_content_inner{
+            position: absolute;
+            padding: 30px 15px;
+            left: 0;
+            bottom: 0;
+            z-index: 9;
+            opacity: 0;
+            visibility: hidden;
+            width: 100%;
+            text-align: center;
+            .dl_name{
+                font-size: 24px;
+                margin-bottom: 5px; 
+                overflow: hidden;
+                a{
+                    overflow: hidden;
+                    color: #fff;
+                    display: block;
+                }
+            }
+            .dl_position{
+                margin-top: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 1.38px;
+                color: rgba(255,255,255);
+                margin-top: 0;
+                overflow: hidden;
+                span{
+                    overflow: hidden;
+                    display: block;
+                }
+            }
+        }
+        .dl_social_icon{
+            top: 45%;
+            right: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            position: absolute;
+            z-index: 9;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+            a{
+                color: $white;
+                font-size: 18px;
+                margin-right: 25px;
+                overflow: hidden;
+                display: inline-block;
+                i{
+                    overflow: hidden;
+                    display: inline-block;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+        &:hover{
+            .dl_team_member_thumb{
+               &:after{
+                    background-color: rgba(0,0,0, .7);
+                    opacity: 1;
+                } 
+            }
+            
+            .dl_team_content_inner, .dl_social_icon{
+                opacity: 1;
+                visibility: visible;
+            }
+            .dl_social_icon{
+                a{
+                    &:nth-child(1){
+                        i{
+                            animation: fadeInUp2 .4s both .1s;
+                        }
+                    }
+                    &:nth-child(2){
+                        i{
+                            animation: fadeInUp2 .5s both .1s;
+                        }
+                    }
+                    &:nth-child(3){
+                        i{
+                            animation: fadeInUp2 .6s both .1s;
+                        }
+                    }
+                    &:nth-child(4){
+                        i{
+                            animation: fadeInUp2 .7s both .1s;
+                        }
+                    }
+                }
+            }
+            .dl_name{
+                a{
+                    animation: fadeInUp2 .5s both .1s; 
+                }
+            }
+            .dl_position{
+                span{
+                    animation: fadeInUp2 .5s both .1s;
+                }
+            }
+        } 
+    }
+}
+
+/** :::::::::::::::: team style 3 css end :::::::::::::::**/

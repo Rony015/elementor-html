@@ -1,0 +1,61 @@
+/** :::::::::::::::: info box style 1 css :::::::::::::::**/
+.dl_info_box_section{
+    position: relative;
+    .info_box_shape_1{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .info_box_shape_2{
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+}
+.dl_single_info_box{
+    &.style_1{
+        .info_box_icon{
+            margin-bottom: 30px;
+            @media #{$tab}{
+                margin-bottom: 25px;
+            }
+            position: relative;
+            z-index: 1;
+            &:after{
+                position: absolute;
+                content: "";
+                width: 55px;
+                height: 55px;
+                bottom: -4px;
+                left: -13px;
+                z-index: -1;
+                border-radius: 50%;
+            }
+            &.shape_1{
+                &:after{
+                    background: #FFF5F8;
+                }
+            }
+            &.shape_2{
+                &:after{
+                    background: rgba(225, 233, 250, 0.6);
+                }
+            }
+        }
+        .dl_title{
+            font-size: 20px;
+            line-height: 1;
+            font-weight: 700;
+            margin-bottom: 13px;
+        }
+        .dl_description{
+            margin-top: 18px;
+            line-height: 24px;
+            font-size: 15px;
+            @media #{$tab}{
+                margin-top: 8px;
+            }
+        }
+    }
+}
+/** :::::::::::::::: info box style 1 css end :::::::::::::::**/

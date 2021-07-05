@@ -1,0 +1,36 @@
+/** :::::::::::::::: info box style 3 css :::::::::::::::**/
+.dl_single_info_box{
+    &.style_3{
+        display: flex;
+        align-items: center;
+        padding: 22px 32px;
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        border-radius: 24px;
+        @media #{$xs_mobile}{
+            display: block;
+        }
+        .info_box_icon{
+            display: flex;
+        }
+        .dl_single_info_box_content{
+            margin-left: 40px;
+            @media #{$xs_mobile}{
+                margin-left: 0;
+                margin-top: 25px;
+            }
+        }
+        .dl_title{
+            line-height: 1;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .dl_description{
+            line-height: 1.6;
+        }
+        .read_more_btn{
+            margin-top: 14px;
+        }
+    }
+}
+/** :::::::::::::::: info box style 3 css end :::::::::::::::**/

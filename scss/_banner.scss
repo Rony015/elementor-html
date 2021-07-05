@@ -1,0 +1,922 @@
+
+/******* banner content style **********/
+.dl_banner_content{
+    @media #{$tab}{
+        margin: 50px 0;
+    }
+    .dl_banner_title{
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        @media #{$tab}{
+            font-size: 35px;
+            line-height: 46px;
+        }
+        @media #{$medium_device}{
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+    .dl_banner_desc{
+        margin-bottom: 50px;
+        font-size: 20px;
+        line-height: 32px;
+        font-family: 'Poppins', sans-serif;
+        @media #{$tab}{
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        @media #{$medium_device}{
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .dl_cu_btn{
+        padding: 18px 42px;
+        line-height: 15px;
+        margin-right: 26px;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        &:last-child{
+            margin-right: 0;
+        }
+        @media #{$tab}{
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 15px 25px;
+            font-size: 14px;
+        }
+        @media #{$medium_device}{
+            padding: 14px 14px;
+        }
+        &.btn_4{
+            background-color: #D0DEFF;
+            color: $base_color;
+            border: 2px solid #D0DEFF;
+            &:hover{
+                background-color: $base_color;
+                color: $white;
+                border: 2px solid $base_color;
+            }
+        }
+    }
+    &.dl_banner_content_style_01{
+        .dl_banner_title{
+            color: $white;
+        }
+        .dl_banner_desc{
+            color: $white;
+        }
+        .dl_cu_btn{
+            padding: 18px 42px;
+            line-height: 15px;
+            margin-right: 26px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            &:last-child{
+                margin-right: 0;
+            }
+            @media #{$tab}{
+                margin-right: 10px;
+                margin-bottom: 10px;
+                padding: 15px 25px;
+            }
+            &.btn_3{
+                background-color: #FF6D43;
+                color: $white;
+                border: 1.5px solid #FF6D43;
+                &:hover{
+                    background-color: transparent;
+                    color: #FF6D43;
+                    border: 1.5px solid #FF6D43;
+                }
+            }
+            &.btn_4{
+                background-color: transparent;
+                color: #FF6D43;
+                border: 1.5px solid #FF6D43;
+                &:hover{
+                    background-color: #FF6D43;
+                    color: $white;
+                    border: 1.5px solid #FF6D43;
+                }
+            }
+        }
+    }
+    &.dl_banner_content_style_02{
+        .dl_banner_title{
+            color: $white;
+        }
+        .dl_banner_desc{
+            color: $white;
+        }
+        .dl_cu_btn{
+            padding: 18px 42px;
+            line-height: 15px;
+            margin-right: 26px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 50px;
+            &:last-child{
+                margin-right: 0;
+            }
+            @media #{$tab}{
+                margin-right: 10px;
+                margin-bottom: 10px;
+                padding: 15px 25px;
+            }
+            &.btn_3{
+                background-color: #fff;
+                color: #2DCA73;
+                border: 1.5px solid #fff;
+                &:hover{
+                    background-color: #2DCA73;
+                    color: #fff;
+                    border: 1.5px solid #2DCA73;
+                }
+            }
+            &.btn_4{
+                background-color: transparent;
+                color: #fff;
+                border: 1.5px solid #fff;
+                &:hover{
+                    background-color: #fff;
+                    color: #2DCA73;
+                    border: 1.5px solid #fff;
+                }
+            }
+        }
+    }
+    &.dl_banner_content_style_03{
+        .dl_banner_title{
+            color: $white;
+        }
+        .dl_banner_desc{
+            color: $white;
+        }
+        .dl_cu_btn{
+            padding: 18px 42px;
+            line-height: 15px;
+            margin-right: 26px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 5px;
+            &:last-child{
+                margin-right: 0;
+            }
+            @media #{$tab}{
+                margin-right: 10px;
+                margin-bottom: 10px;
+                padding: 15px 25px;
+            }
+            &.btn_3{
+                background-color: #2DCA73;
+                color: #fff;
+                border: 1.5px solid #2DCA73;
+                border-radius: 50px;
+                &:hover{
+                    background-color: #fff;
+                    color: #2DCA73;
+                    border: 1.5px solid #fff;
+                }
+            }
+        }
+    }
+    &.dl_banner_content_style_04{
+        .dl_cu_btn{
+            padding: 18px 42px;
+            line-height: 15px;
+            margin-right: 26px;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 5px;
+            &:last-child{
+                margin-right: 0;
+            }
+            @media #{$tab}{
+                margin-right: 10px;
+                margin-bottom: 10px;
+                padding: 15px 25px;
+            }
+            &.btn_3{
+                background-color: #FF3946;
+                color: #fff;
+                border: 1.5px solid #FF3946;
+                border-radius: 50px;
+                &:hover{
+                    background-color: $base_color;
+                    color: #fff;
+                    border: 1.5px solid $base_color;
+                }
+            }
+        }
+    }
+    &.dl_banner_content_style_05{
+        text-align: center;
+        .dl_banner_title{
+            font-family: 'Poppins';
+            font-size: 72px;
+            font-weight: 400;
+            line-height: 85px;
+            letter-spacing: -3.5px;
+            text-align: center;
+            color: $white;
+            margin-bottom: 22px;
+            @media #{$tab}{
+                font-size: 30px;
+                line-height: 38px;
+                letter-spacing: 0;
+            }
+            @media #{$medium_device}{
+                font-size: 40px;
+                line-height: 50px;
+                letter-spacing: 0;
+            }
+        }
+        .dl_banner_desc{
+            font-family: 'Poppins';
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $white;
+            @media #{$tab}{
+                font-size: 18px;
+                line-height: 28px;
+            }
+            @media #{$medium_device}{
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        .dl_cu_btn{
+            font-weight: 500;
+        }
+    }
+    &.dl_banner_content_style_06{
+        .dl_banner_title{
+            font-family: 'Poppins';
+            font-size: 72px;
+            font-weight: 400;
+            line-height: 85px;
+            letter-spacing: -3.5px;
+            color: $white;
+            margin-bottom: 17px;
+            @media #{$tab}{
+                font-size: 30px;
+                line-height: 38px;
+                letter-spacing: 0;
+            }
+            @media #{$medium_device}{
+                font-size: 40px;
+                line-height: 50px;
+                letter-spacing: 0;
+            }
+        }
+        .dl_cu_btn{
+            border-width: 1.5px;
+            font-weight: 500;
+            &.btn_3{
+                background-color: #2DCA73;
+                color: #fff;
+                border: 1.5px solid #2DCA73;
+                border-radius: 5px;
+                &:hover{
+                    background-color: #fff;
+                    color: #2DCA73;
+                    border: 1.5px solid #fff;
+                }
+            }
+            &.btn_1{
+                &:hover{
+                    background-color: #fff;
+                    color: #2DCA73;
+                    border: 1.5px solid #fff;
+                }
+            }
+        }
+        .dl_banner_desc{
+            font-family: 'Poppins';
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $white;
+            @media #{$tab}{
+                font-size: 18px;
+                line-height: 28px;
+            }
+            @media #{$medium_device}{
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+    &.dl_banner_content_style_07{
+        padding-left: 70px;
+        @media #{$tab}{
+            padding-left: 0;
+        }
+        .dl_banner_title{
+            font-family: 'Poppins';
+            font-size: 65px;
+            font-weight: 400;
+            line-height: 80px;
+            letter-spacing: -3.5px;
+            color: $heading_color;
+            margin-bottom: 37px;
+            @media #{$tab}{
+                font-size: 30px;
+                line-height: 38px;
+                letter-spacing: 0;
+            }
+            @media #{$medium_device}{
+                font-size: 50px;
+                line-height: 60px;
+                letter-spacing: 0;
+            }
+        }
+        .dl_banner_subscribe_form{
+            margin-top: 40px;
+        }
+    }
+    &.dl_banner_content_style_08{
+        .dl_banner_title{
+            font-family: 'Poppins';
+            font-size: 65px;
+            font-weight: 400;
+            line-height: 85px;
+            letter-spacing: -3.5px;
+            color: $white;
+            margin-bottom: 37px;
+            @media #{$tab}{
+                font-size: 30px;
+                line-height: 38px;
+                letter-spacing: 0;
+            }
+            @media #{$medium_device}{
+                font-size: 50px;
+                line-height: 60px;
+                letter-spacing: 0;
+            }
+        }
+        .dl_banner_subscribe_form{
+            margin-top: 40px;
+            input{
+                background-color: #6174FE;
+                &:focus{
+                    color: $white;
+                }
+            }
+            .dl_cu_btn{
+                background-color: $white;
+                color: #465DFF;
+                border: 1px solid #465DFF;
+                &:hover{
+                    background-color: #2DCA73;
+                    border: 1px solid #2DCA73;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &.dl_banner_content_style_09{
+        .dl_banner_title{
+            font-size: 65px;
+            font-weight: 400;
+            color: $white;
+            margin-bottom: 25px;
+            @media #{$tab}{
+                font-size: 30px;
+                line-height: 38px;
+                margin-bottom: 20px;
+            }
+            @media #{$medium_device}{
+                font-size: 40px;
+                line-height: 48px;
+                margin-bottom: 20px;
+            }
+            span{
+                color: #00DB54;
+                display: block;
+                width: 100%;
+            }
+        }
+        .dl_banner_desc{
+            color: $white;
+        }
+        .btn_2{
+            border: 1px solid #00DB54;
+            color: #00DB54;
+            &:hover{
+                background-color: #00DB54;
+                color: $white;
+            }
+        }
+    }
+    &.dl_banner_content_style_10{
+        .dl_banner_sub_title{
+            font-weight: 500;
+            font-size: 18px;
+            color: #FFFFFF;
+            margin-bottom: 14px;
+        }
+        .dl_banner_title{
+            font-size: 62px;
+            font-weight: 400;
+            color: $white;
+            margin-bottom: 28px;
+            @media #{$tab}{
+                font-size: 30px;
+                line-height: 38px;
+                margin-bottom: 20px;
+            }
+            @media #{$medium_device}{
+                font-size: 40px;
+                line-height: 48px;
+                margin-bottom: 20px;
+            }
+            span{
+                color: #00DB54;
+                display: block;
+                width: 100%;
+            }
+        }
+        .dl_banner_desc{
+            color: $white;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: -.4px;
+        }
+        .btn_3{
+            border: 1px solid #fff;
+            background-color: #fff;
+            color: #A582FF;
+            font-family: "Poppins", sans-serif;
+            border-radius: 100px;
+            padding: 19px 33px;
+            &:hover{
+                background-color: #A582FF;
+                border: 1px solid #A582FF;
+                color: $white;
+            }
+        }
+    }
+    .dl_banner_subscribe_form{
+        display: flex;
+        align-items: center;
+        position: relative;
+        @media #{$xs_mobile}{
+            display: block;
+        }
+        ::placeholder{
+            color: #A9ABBD;
+        }
+        .dl_mail_icon{
+            position: absolute;
+            left: 14px;
+            top: 16px;
+            color: #D9DCE3;
+        }
+        input{
+            background-color: #F8F8F8;
+            border: 1px solid transparent;
+            padding: 10px 48px;
+            border-radius: 5px;
+            height: 50px;
+            line-height: 50px;
+            color: #A9ABBD;
+            font-size: 16px;
+            @media #{$xs_mobile}{
+                display: block;
+                width: 100%;
+            }
+            &:focus{
+                color: $heading_color;
+            }
+        }
+        &:focus{
+            color: $white;
+            .dl_mail_icon{
+                color: #fff;
+            }
+        }
+        
+        .dl_cu_btn{
+            margin-left: 15px;
+            cursor: pointer;
+            padding: 16px 40px;
+            background-color: #783BFF;
+            border: 1px solid #783BFF;
+            color: $white;
+            line-height: 16px;
+            @media #{$xs_mobile}{
+                display: block;
+                text-align: center;
+                width: 100%;
+                margin: 10px 0 0;
+            }
+            &:hover{
+                background-color: #2DCA73;
+                border: 1px solid #2DCA73;
+            }
+        }
+    }
+}
+/******* banner content style end **********/
+
+/******* banner style 01 **********/
+.dl_banner_section_style_01{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 80px 0;
+    @media #{$tab}{
+        min-height: 100vh;
+        padding: 80px 0;
+        height: auto;
+        text-align: center;
+    }
+    .dl_banner_img{
+        @media #{$big_device}{
+            right: 140px;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
+        @media #{$big_screen}{
+            right: 140px;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            max-width: 35%;
+        }
+        @media #{$medium_device}{
+            right: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            max-width: 37%;
+        }
+        @media #{$big_screen}{
+            max-width: 37%;
+        }
+        @media #{$extra_big_screen}{
+            max-width: 37%;
+        }
+        @media #{$tab}{
+            margin: 0 auto;
+        }
+        @media #{$tab_device}{
+            max-width: 40%;
+        }
+    }
+}
+/******* banner style 01 end **********/
+
+/******* banner style 02 **********/
+.dl_banner_section_style_02{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 80px 0;
+    @media #{$tab}{
+        min-height: 100vh;
+        padding: 80px 0;
+        height: auto;
+        text-align: center;
+    }
+    &.dl_banner_overlay{
+        &:after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #111;
+            opacity: .9;
+            z-index: -1;
+        }
+    }
+    &.dl_gradient_banner_overlay{
+        &:after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            z-index: -1;
+            background: linear-gradient(261.39deg, #9656FF 3.25%, rgba(64, 78, 217, 0.2) 100.22%);
+        }
+    }
+    &.dl_overlay_opacity{
+        &:after{
+            opacity: .7;
+        }
+    }
+    .dl_banner_img{
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        &.dl_img_round_shape{
+             &:after{
+                position: absolute;
+                left: -30px;
+                bottom: -30px;
+                content: "";
+                width: 120px;
+                height: 120px;
+                background-color: #FF6D43;
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+    }
+}
+/******* banner style 02 end **********/
+
+/******* banner style 03 **********/
+.dl_banner_section_style_03{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 80px 0;
+    @media #{$tab}{
+        min-height: 100vh;
+        padding: 80px 0;
+        height: auto;
+        text-align: center;
+    }
+    &.dl_banner_overlay{
+        position: relative;
+        z-index: 1;
+        &:after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(270.13deg, #9656FF 19.73%, #404ED9 110.36%);
+            opacity: .9;
+            z-index: -1;
+        }
+    }
+    .dl_banner_img{
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        &.dl_img_round_shape{
+            &:after{
+                position: absolute;
+                left: -30px;
+                bottom: -30px;
+                content: "";
+                width: 120px;
+                height: 120px;
+                background-color: #2DCA73;
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+        
+    }
+}
+/******* banner style 03 end **********/
+
+/******* banner style 04 **********/
+.dl_banner_section_style_04{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 80px 0;
+    @media #{$tab}{
+        min-height: 100vh;
+        padding: 80px 0;
+        height: auto;
+        text-align: center;
+    }
+    .dl_banner_img{
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        @media #{$tab}{
+            margin: 0 auto;
+            position: relative;
+            right: auto;
+            top: auto;
+            transform: translateY(0);
+        }
+        @media #{$tab_device}{
+            max-width: 60%;
+        }
+        @media #{$medium_device}{
+            max-width: 50%;
+        }
+        @media #{$big_screen}{
+            max-width: 37%;
+        }
+        @media #{$extra_big_screen}{
+            max-width: 37%;
+        }
+    }
+}
+/******* banner style 04 end **********/
+
+/******* banner style 05 **********/
+.dl_banner_section_style_05{
+    height: 100vh;
+    position: relative;
+    padding: 240px 0;
+    margin-bottom: 380px;
+    
+    @media #{$tab}{
+        min-height: 100vh;
+        padding: 80px 0;
+        height: auto;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    @media #{$medium_device}{
+        padding: 80px 0;
+    }
+    .dl_main_banner_img{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        bottom: -38%;
+        @media #{$tab}{
+            position: relative;
+            margin: 0 25px;
+            img{
+                border-radius: 20px;
+            }
+        }
+        @media #{$medium_device}{
+            max-width: 94%;
+            bottom: -16%;
+        }
+        @media #{$big_screen}{
+            max-width: 60%;
+        }
+        @media #{$extra_big_screen}{
+            max-width: 60%;
+        }
+        img{
+            border-radius: 30px;
+            box-shadow:(0px 2px 30px rgba(109, 104, 104, 0.2));
+        }
+    }
+}
+/******* banner style 05 end **********/
+
+/******* banner style 06 **********/
+.dl_banner_section_style_06{
+    height: 100vh;
+    position: relative;
+    padding: 240px 0;
+    display: flex;
+    align-items: center;
+    @media #{$tab}{
+        min-height: 100vh;
+        padding: 80px 0;
+        height: auto;
+        text-align: center;
+    }
+    .dl_main_banner_img{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        img{
+            box-shadow:(0px 2px 30px rgba(109, 104, 104, 0.2));
+        }
+        @media #{$tab}{
+            position: relative;
+            transform: translateY(0);
+            margin: 0 25px;
+            img{
+                border-radius: 20px;
+            }
+        }
+        @media #{$medium_device}{
+            max-width: 50%;
+        }
+        @media #{$big_screen}{
+            max-width: 50%;
+        }
+        @media #{$extra_big_screen}{
+            max-width: 45%;
+        }
+    }
+}
+/******* banner style 06 end **********/
+
+/******* banner style 07 **********/
+.dl_banner_section_style_07{
+    height: 100vh;
+    position: relative;
+    padding: 240px 0;
+    display: flex;
+    align-items: center;
+    @media #{$tab}{
+        min-height: 100vh;
+        padding: 80px 0;
+        height: auto;
+        text-align: center;
+    }
+    .dl_main_banner_img{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        img{
+            border-radius: 0 30px 30px 0;
+            box-shadow:(0px 2px 30px rgba(109, 104, 104, 0.2));
+        }
+        @media #{$tab}{
+            position: relative;
+            transform: translateY(0);
+            margin: 0 25px;
+            img{
+                border-radius: 20px;
+            }
+        }
+        @media #{$medium_device}{
+            max-width: 50%;
+        }
+        @media #{$big_screen}{
+            max-width: 50%;
+        }
+        @media #{$extra_big_screen}{
+            max-width: 45%;
+        }
+    }
+}
+/******* banner style 07 end **********/
+
+/******* banner style 08 **********/
+.dl_banner_section_style_08{
+    height: 100vh;
+    position: relative;
+    padding: 240px 0;
+    display: flex;
+    align-items: center;
+    @media #{$tab}{
+        min-height: 100vh;
+        padding: 80px 0;
+        height: auto;
+        text-align: center;
+    }
+}
+/******* banner style 08 end **********/
+
+
+/******* banner style 08 **********/
+.dl_banner_section_style_09{
+    height: 100vh;
+    position: relative;
+    padding: 240px 0;
+    display: flex;
+    align-items: center;
+    background-position: bottom right !important;
+    @media #{$tab}{
+        min-height: 100vh;
+        padding: 80px 0;
+        height: auto;
+        text-align: center;
+    }
+    .dl_main_banner_img{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+/******* banner style 08 end **********/

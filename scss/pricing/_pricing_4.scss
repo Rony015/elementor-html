@@ -1,0 +1,124 @@
+/******** popular pricing style 04 here ********/
+.dl_pricing_plan{
+    &.dl_style_04{
+        background-color: #fff;
+        position: relative;
+        border: 1px solid #E9ECF0;
+        padding: 0 30px 50px;
+        @media #{$big_device}{
+            height: 100%;
+            border-right: 1px solid transparent;
+        }
+        @media #{$tab}{
+            margin-bottom: 30px;
+        }
+        
+        .dl_pricing_part_title{
+            padding: 20px 0;
+            height: 205px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .dl_title{
+            font-size: 14px;
+            font-weight: 600;
+            color: #0038E3;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .dl_pricing_title{
+            font-size: 20px;
+            font-weight: 600;
+            color: #222;
+            float: left;
+            margin-bottom: 20px;
+        }
+        .dl_img_res + .dl_pricing_title{
+            margin-top: 5px;
+        }
+        .dl_title + .dl_price{
+            margin-top: 45px;
+        }
+
+        .dl_price{
+            font-size: 50px;
+            font-weight: 500;
+            color: #222222;
+            display: flex;
+            line-height: 0.6;
+            justify-content: center;
+            @media #{$medium_device}{
+                font-size: 32px;
+            }
+            .dl_currancy{
+                font-size: 18px;
+                margin-right: 8px;
+                align-self: flex-start;
+            }
+            .dl_price_duration{
+                font-size: 15px;
+                color: #44515B;
+                font-weight: 500;
+                margin-left: 10px;
+                align-self: flex-end;
+            }
+        }
+        
+        .dl_pricing_list {
+            border-top: 1px solid #EDF1F6;
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                text-align: center;
+                color: #999999;
+                font-size: 14px;
+            }
+            li{
+                border-bottom: 1px solid #EAEAEA;
+                padding: 0 20px;
+                line-height: 40px;
+                height: 40px;
+            }
+        } 
+        
+        .dl_pricing_list + .dl_cu_btn{
+            margin-top: 30px;
+        }
+        .dl_popular_tricker{
+            position: absolute;
+            top: -10px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            max-width: 127px;
+            .dl_text{
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                background-color: #0038E3;
+                padding: 5px 20px;
+                font-size: 9px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+        &:hover{
+            .dark_bg{
+                background-color: #0038E3;
+                border: 1px solid #0038E3;
+            }
+        }
+    }
+}
+@media #{$big_device}{
+    .dl_col_lg_4 {
+        &:last-child{
+            .dl_pricing_plan.dl_style_04{
+                border-right: 1px solid #E9ECF0;
+            }
+        }
+    }
+}
+/******** popular pricing style 04 end  ********/

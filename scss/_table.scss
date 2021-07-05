@@ -1,0 +1,405 @@
+//feature list table css
+.dl_feature_list_table {
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .dl_table_nav {
+        display: flex;
+        top: 0px;
+        z-index: 10;
+        padding-bottom: 14px;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    button {
+        list-style: none;
+        flex: 1;
+    }
+
+    button:last-child {
+        border-right: 1px solid #F5F5F5;
+    }
+
+    button {
+        width: 100%;
+        border: 1px solid #F5F5F5;
+        border-right: 0;
+        padding: 10px;
+        background: #FFF;
+        height: 65px;
+    }
+
+    button.active {
+        background: #F5F5F5;
+        color: #000;
+    }
+
+    table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    th {
+        background: #F5F5F5;
+        display: none;
+    }
+
+    td,
+    th {
+        border: 1px solid #E7F0FA;
+        padding: 20px;
+        empty-cells: show;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    td,
+    th {
+        text-align: left;
+    }
+
+    td+td,
+    th+th {
+        text-align: center;
+        display: none;
+    }
+
+    td.default {
+        display: table-cell;
+    }
+
+    .dl_hide {
+        border: 0;
+        background: none;
+    }
+
+    td,
+    th {
+        background-color: #0E4DE3;
+        border: 0px solid transparent;
+        color: $white;
+    }
+
+    td+td,
+    th+th {
+        background-color: #fff;
+        border: 1px solid #E7F0FA;
+        color: $heading_color;
+    }
+
+    @media (min-width: 768px) {
+        th {
+            padding: 45px !important;
+        }
+
+        td,
+        th {
+            display: table-cell !important;
+        }
+
+        td,
+        th {
+            width: 330px;
+            padding: 20px 45px;
+        }
+
+        td+td,
+        th+th {
+            width: auto;
+        }
+    }
+}
+
+//dl table style
+.dl_table {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: $white;
+
+        @media #{$tab} {
+            background-color: transparent;
+        }
+    }
+
+    td,
+    th {
+        padding: 22px 41px;
+        text-align: left;
+        font-size: 15px;
+        color: #6A6A6A;
+
+        &:first-child {
+            padding: 22px 27px;
+            text-align: center;
+
+            @media #{$tab} {
+                text-align: left;
+                padding-left: 50%;
+                background-color: $white;
+            }
+        }
+
+        a {
+            color: #6A6A6A;
+        }
+    }
+
+    th {
+        background: #0E4DE3;
+        color: $white;
+    }
+
+    @media only screen and (max-width: 991px) {
+        table {
+            width: 100%;
+        }
+
+        tr {
+            margin-bottom: 12px;
+            background-color: $white;
+        }
+
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+            display: block;
+        }
+
+        thead tr {
+            display: none;
+        }
+
+        td {
+            position: relative;
+            padding-left: 50%;
+        }
+
+        td:before {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            content: attr(data-column);
+            color: #000;
+            font-weight: bold;
+            transform: translateY(-50%);
+        }
+    }
+
+    &.dl_table_border_style {
+        td,
+        th {
+            border-width: 1px;
+            border-color: #E7F0FA;
+            border-style: solid;
+        }
+
+        th {
+            border-top: 0px;
+
+            &:first-child {
+                border-right: 0px;
+            }
+
+            &:last-child {
+                border-left: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 991px) {
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+        }
+    }
+
+    &.dl_table_striped {
+        tr {
+            &:nth-of-type(even) {
+                background-color: #F1FBFF;
+            }
+        }
+    }
+
+    &.dl_table_style_01 {
+        table{
+            background-color: transparent;
+        }
+        td {
+            border-color: rgba($color: #FFFFFF, $alpha: .3);
+            color: $white;
+            a{
+                color: $white;
+            }
+        }
+        th {
+            background-color: rgba($color: #000000, $alpha: .33);
+            border-color: transparent;
+        }
+        @media only screen and (max-width: 991px){
+            tr {
+                background-color: transparent;
+            }
+            td:first-child, th:first-child {
+                background-color: rgba(0, 0, 0, 0.33);
+            }
+            td:before {
+                color: #fff;
+            }
+        }
+    }
+    &.dl_table_style_02 {
+        table{
+            background-color: transparent;
+        }
+        td {
+            border-color: rgba($color: #FFFFFF, $alpha: .3);
+            color: $white;
+            a{
+                color: $white;
+            }
+            &:last-child{
+                border-right: 0;
+            }
+            &:first-child{
+                border-left: 0;
+            }
+        }
+        tr {
+            background-color: rgba($color: #000000, $alpha: .61);
+            &:last-child{
+                td {
+                    border-bottom: 0;
+                }
+            }
+        }
+        th {
+            background-color: rgba($color: #000000, $alpha: .33);
+            border-color: transparent;
+        }
+        @media only screen and (max-width: 991px){
+            td:before {
+                color: #fff;
+            }
+            td {
+                &:first-child{
+                    &:before {
+                        color: #000;
+                    }
+                }
+            }
+            td:first-child, th:first-child {
+                color: #000;
+            }
+        }
+    }
+    &.dl_table_style_03 {
+        table{
+            background-color: rgba($color: #000000, $alpha: .6);
+        }
+        td {
+            border-color: rgba($color: #000000, $alpha: 1);
+            border-bottom: 0;
+            border-top: 0;
+            color: $white;
+            a{
+                color: $white;
+            }
+            &:last-child{
+                border-right: 0;
+            }
+            &:first-child{
+                border-left: 0;
+            }
+        }
+        tr {
+            &:last-child{
+                td {
+                    border-bottom: 0;
+                }
+            }
+            &:nth-child(even){
+                background-color: rgba($color: #000000, $alpha: .61);
+            }
+        }
+        th {
+            background-color: rgba($color: #000000, $alpha: .6);
+            border-color: transparent;
+        }
+        @media only screen and (max-width: 991px){
+            tr {
+                background-color: transparent;
+            }
+            td:first-child, th:first-child {
+                background-color: transparent;
+            }
+            td:before {
+                color: #fff;
+            }
+        }
+    }
+    &.dl_table_style_04 {
+        background-color: transparent;
+        td {
+            border-color: rgba($color: #000000, $alpha: 1);
+            border-bottom: 0;
+            border-top: 0;
+            color: #6A6A6A;
+            a{
+                color: #6A6A6A;
+            }
+            &:last-child{
+                border-right: 0;
+            }
+            &:first-child{
+                border-left: 0;
+            }
+        }
+        tr {
+            &:last-child{
+                td {
+                    border-bottom: 0;
+                }
+            }
+        }
+        tr:nth-of-type(even) {
+            background-color: #F2F2F2;
+        }
+        th {
+            background-color: #212121;
+            border-color: transparent;
+        }
+        td:first-child, th:first-child {
+            padding: 22px 41px;
+            text-align: left;
+            @media #{$tab} {
+                text-align: left;
+                padding-left: 50%;
+            }
+        }
+        img{
+            max-width: 24px;
+            vertical-align: -6px;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 1px solid #E0E0E0;
+        }
+       
+    }
+}
+.dl_orange_gradient_bg {
+    background: linear-gradient(141deg, #A762FF 15.32%, #D500F8 87.5%);
+}

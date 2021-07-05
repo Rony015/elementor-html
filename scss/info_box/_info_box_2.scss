@@ -1,0 +1,44 @@
+/** :::::::::::::::: info box style 2 css :::::::::::::::**/
+.dl_info_box_section{
+    &.dl_info_box_bg{
+        @include background ("../img/icon_box_bg.png");
+    }
+}
+
+.dl_single_info_box{
+    &.style_2{
+        background-color: $white;
+        margin-top: 80px;
+        text-align: center;
+        padding: 140px 25px 50px;
+        position: relative;
+        box-shadow: 0px 12px 10px #F1F1F1;
+        border-radius: 10px;
+        @include transform_time (.3s);
+        &:hover{
+            box-shadow: 0px 10px 30px #D8D8D8;
+        }
+        .info_box_icon{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: -60px;
+        }
+        .dl_title{
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        .dl_description{
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .dl_cu_btn{
+            border-radius: 3px;
+            margin-top: 27px;
+        }
+    }
+}
+/** :::::::::::::::: info box style 2 css end :::::::::::::::**/

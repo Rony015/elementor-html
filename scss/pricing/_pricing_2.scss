@@ -1,0 +1,120 @@
+/******** popular pricing style 02 here ********/
+.dl_pricing_plan{
+    &.dl_style_02{
+        padding: 50px 50px 57px;
+        background-color: #fff;
+        position: relative;
+        @include transform_time(.3s);
+        @media #{$tab}{
+            margin-bottom: 30px;
+            padding: 30px 20px;
+        }
+        @media #{$medium_device}{
+            padding: 30px 20px;
+        }
+        .dl_price{
+            font-size: 40px;
+            font-weight: 700;
+            color: #051441;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e9e9f4;
+            display: flex;
+            align-items: center;
+            .dl_currancy{
+                color: #222222;
+                font-size: 18px;
+                margin-right: 8px;
+            }
+        }
+        .dl_price + .dl_title{
+            margin-top: 34px;
+        }
+        .dl_title{
+            font-size: 20px;
+            font-weight: 700;
+            color: #222222;
+        }
+        .dl_pricing_list{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                font-size: 14px;
+                font-weight: 500;
+                margin: 20px 0;
+                img{
+                    margin-right: 11px;
+                }
+            }
+        }
+        .dl_title + .dl_pricing_list{
+            margin-top: 30px;
+        }
+        .dl_pricing_list + .dl_cu_btn{
+            margin-top: 26px;
+        }
+        &.dl_pricing_center{
+            box-shadow: 0px 30px 60px 0px rgba(0, 11, 40, 0.14);
+            background-color: $white;
+        }
+        .dl_cu_btn{
+            padding: 15px 40px;
+            border-radius: 6px;
+            &.btn_4{
+                background-color: #222;
+                &:hover{
+                    background-color: #5A52FF;
+                    border: 1px solid #5A52FF;
+                }
+            }
+        }
+        .dl_popular_tricker{
+            position: absolute;
+            top: 40px;
+            left: -5px;
+            .dl_text{
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                background-color: #5A52FF;
+                padding: 5px 20px;
+                font-size: 9px;
+                font-weight: 700;
+                text-transform: uppercase;
+                clip-path: polygon(100% 0%, 94% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+            }
+        }
+        &.dl_popular_price{
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
+            padding: 90px 50px 82px;
+            @media #{$tab}{
+                padding: 90px 30px 50px;
+            }
+            @media #{$medium_device}{
+                padding: 90px 30px 50px;
+            }
+            .dl_cu_btn.btn_4{
+                background-color: #5A52FF;
+                border: 1px solid #5A52FF;
+            }
+        }
+        &:hover{
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
+            padding: 90px 50px 82px;
+            @media #{$tab}{
+                padding: 90px 30px 50px;
+            }
+            @media #{$medium_device}{
+                padding: 90px 30px 50px;
+            }
+            .dl_cu_btn.btn_4{
+                background-color: #5A52FF;
+                border: 1px solid #5A52FF;
+            }
+        }
+    }
+    &:last-child{
+        border-right: 0px !important;
+    }
+} 
+/******** popular pricing style 02 end  ********/

@@ -1,0 +1,83 @@
+/** :::::::::::::::: blog post 9 css :::::::::::::::**/
+.dl_single_blog_post{
+    &.style_9{
+        background: #FFFFFF;
+        box-shadow: 0px 12px 10px #F1F1F1;
+        border-radius: 10px;
+        padding: 45px 35px;
+        @media #{$tab}{
+            margin-bottom: 40px;
+        }
+        .dl_single_blog_img{
+            display: flex;
+            overflow: hidden;
+            border-radius: 10px 10px 0 0;
+            justify-content: center;
+            margin-bottom: 30px;
+            img{
+                max-width: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+        .dl_tag{
+            &.style_2{
+                background-color: #D8E5FB;
+                color: #3C7EEC;
+                font-size: 13px;
+                border-radius: 100px;
+                font-weight: 600;
+                padding: 7px 16px;
+                display: inline-block;
+                text-transform: capitalize;
+                line-height: 16px;
+                &:hover{
+                    background-color: #3C7EEC;
+                    color: #fff;
+                }
+                &.color_2{
+                    color: #6BB125;
+                    background-color: #EAF5DE;
+                    &:hover{
+                        background-color: #6BB125;
+                        color: #fff;
+                    }
+                }
+                &.color_3{
+                    color: #FF7038;
+                    background-color: #FFDFD2;
+                    &:hover{
+                        background-color: #FF7038;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .dl_tag + .dl_title{
+            margin-top: 20px;
+        }
+        .dl_tag + .dl_description{
+            margin-top: 20px;
+        }
+        .dl_title{
+            line-height: 1;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            a{
+                color: #3A416F;
+                &:hover{
+                    color: #5468FF;
+                }
+            }
+        }
+        .dl_description{
+            line-height: 1.6;
+            color: #6D739F;
+            font-size: 15px;
+        }
+        .dl_description + .dl_tag{
+            margin-top: 19px;
+        }
+    }
+}
+/** :::::::::::::::: blog post 9 css end :::::::::::::::**/
